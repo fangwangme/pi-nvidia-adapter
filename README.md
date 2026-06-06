@@ -18,20 +18,20 @@ It dynamically maps, groups, and registers 100+ frontier models available on the
 
 ## Installation
 
-### Method 1: Local Installation (Development)
-Clone the repository and install it into your local Pi Agent instance:
+### Method 1: Package Installation (Recommended)
+Install the extension directly into your Pi Coding Agent:
+```bash
+pi install git:github.com/fangwangme/pi-nvidia-adapter
+```
+
+### Method 2: Local Installation (Development)
+Clone the repository and load it locally:
 ```bash
 # Clone the repository
 git clone git@github.com:fangwangme/pi-nvidia-adapter.git
 
 # Load the extension in Pi
 pi -e ./path/to/pi-nvidia-adapter
-```
-
-### Method 2: Package Installation
-Install the extension directly via GitHub URL:
-```bash
-pi install git:github.com/fangwangme/pi-nvidia-adapter
 ```
 
 ---
