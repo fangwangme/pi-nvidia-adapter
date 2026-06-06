@@ -1,0 +1,1937 @@
+{
+  "models": [
+    {
+      "id": "moonshotai/kimi-k2.6",
+      "name": "Kimi K2.6",
+      "company": "moonshotai",
+      "reasoning": true,
+      "input": [
+        "text",
+        "image"
+      ],
+      "contextWindow": 262144,
+      "maxTokens": 262144,
+      "cost": {
+        "input": 0,
+        "output": 0,
+        "cacheRead": 0,
+        "cacheWrite": 0
+      },
+      "compat": {
+        "supportsReasoningEffort": false,
+        "supportsDeveloperRole": false,
+        "maxTokensField": "max_tokens"
+      }
+    },
+    {
+      "id": "moonshotai/kimi-k2-thinking",
+      "name": "Kimi K2 Thinking",
+      "company": "moonshotai",
+      "reasoning": true,
+      "input": [
+        "text"
+      ],
+      "contextWindow": 262144,
+      "maxTokens": 262144,
+      "cost": {
+        "input": 0,
+        "output": 0,
+        "cacheRead": 0,
+        "cacheWrite": 0
+      },
+      "compat": {
+        "supportsReasoningEffort": false,
+        "supportsDeveloperRole": false,
+        "maxTokensField": "max_tokens"
+      }
+    },
+    {
+      "id": "moonshotai/kimi-k2-instruct-0905",
+      "name": "Kimi K2 0905",
+      "company": "moonshotai",
+      "reasoning": false,
+      "input": [
+        "text"
+      ],
+      "contextWindow": 262144,
+      "maxTokens": 262144,
+      "cost": {
+        "input": 0,
+        "output": 0,
+        "cacheRead": 0,
+        "cacheWrite": 0
+      },
+      "compat": {
+        "supportsReasoningEffort": false,
+        "supportsDeveloperRole": false,
+        "maxTokensField": "max_tokens"
+      }
+    },
+    {
+      "id": "moonshotai/kimi-k2-instruct",
+      "name": "Kimi K2 Instruct",
+      "company": "moonshotai",
+      "reasoning": true,
+      "input": [
+        "text"
+      ],
+      "contextWindow": 128000,
+      "maxTokens": 8192,
+      "cost": {
+        "input": 0,
+        "output": 0,
+        "cacheRead": 0,
+        "cacheWrite": 0
+      },
+      "compat": {
+        "supportsReasoningEffort": false,
+        "supportsDeveloperRole": false,
+        "maxTokensField": "max_tokens"
+      }
+    },
+    {
+      "id": "z-ai/glm-5.1",
+      "name": "GLM-5.1",
+      "company": "z-ai",
+      "reasoning": true,
+      "input": [
+        "text"
+      ],
+      "contextWindow": 131072,
+      "maxTokens": 131072,
+      "cost": {
+        "input": 0,
+        "output": 0,
+        "cacheRead": 0,
+        "cacheWrite": 0
+      },
+      "compat": {
+        "supportsReasoningEffort": false,
+        "supportsDeveloperRole": false,
+        "maxTokensField": "max_tokens"
+      }
+    },
+    {
+      "id": "z-ai/glm4.7",
+      "name": "GLM-4.7",
+      "company": "z-ai",
+      "reasoning": true,
+      "input": [
+        "text"
+      ],
+      "contextWindow": 204800,
+      "maxTokens": 131072,
+      "cost": {
+        "input": 0,
+        "output": 0,
+        "cacheRead": 0,
+        "cacheWrite": 0
+      },
+      "compat": {
+        "supportsReasoningEffort": false,
+        "supportsDeveloperRole": false,
+        "maxTokensField": "max_tokens"
+      }
+    },
+    {
+      "id": "deepseek-ai/deepseek-v4-flash",
+      "name": "DeepSeek V4 Flash",
+      "company": "deepseek-ai",
+      "reasoning": true,
+      "input": [
+        "text"
+      ],
+      "contextWindow": 1048576,
+      "maxTokens": 393216,
+      "cost": {
+        "input": 0,
+        "output": 0,
+        "cacheRead": 0,
+        "cacheWrite": 0
+      },
+      "compat": {
+        "supportsReasoningEffort": false,
+        "supportsDeveloperRole": false,
+        "maxTokensField": "max_tokens"
+      }
+    },
+    {
+      "id": "deepseek-ai/deepseek-v4-pro",
+      "name": "DeepSeek V4 Pro",
+      "company": "deepseek-ai",
+      "reasoning": true,
+      "input": [
+        "text"
+      ],
+      "contextWindow": 1048576,
+      "maxTokens": 393216,
+      "cost": {
+        "input": 0,
+        "output": 0,
+        "cacheRead": 0,
+        "cacheWrite": 0
+      },
+      "compat": {
+        "supportsReasoningEffort": false,
+        "supportsDeveloperRole": false,
+        "maxTokensField": "max_tokens"
+      }
+    },
+    {
+      "id": "deepseek-ai/deepseek-v3.2",
+      "name": "DeepSeek V3.2",
+      "company": "deepseek-ai",
+      "reasoning": true,
+      "input": [
+        "text"
+      ],
+      "contextWindow": 163840,
+      "maxTokens": 65536,
+      "cost": {
+        "input": 0,
+        "output": 0,
+        "cacheRead": 0,
+        "cacheWrite": 0
+      },
+      "compat": {
+        "supportsReasoningEffort": false,
+        "supportsDeveloperRole": false,
+        "maxTokensField": "max_tokens"
+      }
+    },
+    {
+      "id": "deepseek-ai/deepseek-v3.1-terminus",
+      "name": "DeepSeek V3.1 Terminus",
+      "company": "deepseek-ai",
+      "reasoning": true,
+      "input": [
+        "text"
+      ],
+      "contextWindow": 128000,
+      "maxTokens": 8192,
+      "cost": {
+        "input": 0,
+        "output": 0,
+        "cacheRead": 0,
+        "cacheWrite": 0
+      },
+      "compat": {
+        "supportsReasoningEffort": false,
+        "supportsDeveloperRole": false,
+        "maxTokensField": "max_tokens"
+      }
+    },
+    {
+      "id": "abacusai/dracarys-llama-3_1-70b-instruct",
+      "name": "dracarys-llama-3.1-70b-instruct",
+      "company": "abacusai",
+      "reasoning": false,
+      "input": [
+        "text"
+      ],
+      "contextWindow": 128000,
+      "maxTokens": 8192,
+      "cost": {
+        "input": 0,
+        "output": 0,
+        "cacheRead": 0,
+        "cacheWrite": 0
+      },
+      "compat": {
+        "supportsReasoningEffort": false,
+        "supportsDeveloperRole": false,
+        "maxTokensField": "max_tokens"
+      }
+    },
+    {
+      "id": "baai/bge-m3",
+      "name": "BGE M3",
+      "company": "baai",
+      "reasoning": false,
+      "input": [
+        "text"
+      ],
+      "contextWindow": 8192,
+      "maxTokens": 1024,
+      "cost": {
+        "input": 0,
+        "output": 0,
+        "cacheRead": 0,
+        "cacheWrite": 0
+      },
+      "compat": {
+        "supportsReasoningEffort": false,
+        "supportsDeveloperRole": false,
+        "maxTokensField": "max_tokens"
+      }
+    },
+    {
+      "id": "black-forest-labs/flux_2-klein-4b",
+      "name": "FLUX.2 Klein 4B",
+      "company": "black-forest-labs",
+      "reasoning": false,
+      "input": [
+        "text",
+        "image"
+      ],
+      "contextWindow": 40960,
+      "maxTokens": 40960,
+      "cost": {
+        "input": 0,
+        "output": 0,
+        "cacheRead": 0,
+        "cacheWrite": 0
+      },
+      "compat": {
+        "supportsReasoningEffort": false,
+        "supportsDeveloperRole": false,
+        "maxTokensField": "max_tokens"
+      }
+    },
+    {
+      "id": "black-forest-labs/flux_1-kontext-dev",
+      "name": "FLUX.1-Kontext-dev",
+      "company": "black-forest-labs",
+      "reasoning": false,
+      "input": [
+        "text",
+        "image"
+      ],
+      "contextWindow": 40960,
+      "maxTokens": 40960,
+      "cost": {
+        "input": 0,
+        "output": 0,
+        "cacheRead": 0,
+        "cacheWrite": 0
+      },
+      "compat": {
+        "supportsReasoningEffort": false,
+        "supportsDeveloperRole": false,
+        "maxTokensField": "max_tokens"
+      }
+    },
+    {
+      "id": "black-forest-labs/flux_1-schnell",
+      "name": "FLUX.1-schnell",
+      "company": "black-forest-labs",
+      "reasoning": false,
+      "input": [
+        "text"
+      ],
+      "contextWindow": 77,
+      "maxTokens": 77,
+      "cost": {
+        "input": 0,
+        "output": 0,
+        "cacheRead": 0,
+        "cacheWrite": 0
+      },
+      "compat": {
+        "supportsReasoningEffort": false,
+        "supportsDeveloperRole": false,
+        "maxTokensField": "max_tokens"
+      }
+    },
+    {
+      "id": "black-forest-labs/flux.1-dev",
+      "name": "FLUX.1-dev",
+      "company": "black-forest-labs",
+      "reasoning": false,
+      "input": [
+        "text"
+      ],
+      "contextWindow": 4096,
+      "maxTokens": 4096,
+      "cost": {
+        "input": 0,
+        "output": 0,
+        "cacheRead": 0,
+        "cacheWrite": 0
+      },
+      "compat": {
+        "supportsReasoningEffort": false,
+        "supportsDeveloperRole": false,
+        "maxTokensField": "max_tokens"
+      }
+    },
+    {
+      "id": "bytedance/seed-oss-36b-instruct",
+      "name": "ByteDance-Seed/Seed-OSS-36B-Instruct",
+      "company": "bytedance",
+      "reasoning": false,
+      "input": [
+        "text"
+      ],
+      "contextWindow": 262000,
+      "maxTokens": 262000,
+      "cost": {
+        "input": 0,
+        "output": 0,
+        "cacheRead": 0,
+        "cacheWrite": 0
+      },
+      "compat": {
+        "supportsReasoningEffort": false,
+        "supportsDeveloperRole": false,
+        "maxTokensField": "max_tokens"
+      }
+    },
+    {
+      "id": "google/gemma-4-31b-it",
+      "name": "Gemma-4-31B-IT",
+      "company": "google",
+      "reasoning": true,
+      "input": [
+        "text",
+        "image"
+      ],
+      "contextWindow": 256000,
+      "maxTokens": 16384,
+      "cost": {
+        "input": 0,
+        "output": 0,
+        "cacheRead": 0,
+        "cacheWrite": 0
+      },
+      "compat": {
+        "supportsReasoningEffort": false,
+        "supportsDeveloperRole": false,
+        "maxTokensField": "max_tokens"
+      }
+    },
+    {
+      "id": "google/gemma-3n-e2b-it",
+      "name": "Gemma 3n E2b It",
+      "company": "google",
+      "reasoning": false,
+      "input": [
+        "text",
+        "image"
+      ],
+      "contextWindow": 128000,
+      "maxTokens": 4096,
+      "cost": {
+        "input": 0,
+        "output": 0,
+        "cacheRead": 0,
+        "cacheWrite": 0
+      },
+      "compat": {
+        "supportsReasoningEffort": false,
+        "supportsDeveloperRole": false,
+        "maxTokensField": "max_tokens"
+      }
+    },
+    {
+      "id": "google/gemma-3n-e4b-it",
+      "name": "Gemma 3n E4b It",
+      "company": "google",
+      "reasoning": false,
+      "input": [
+        "text",
+        "image"
+      ],
+      "contextWindow": 128000,
+      "maxTokens": 4096,
+      "cost": {
+        "input": 0,
+        "output": 0,
+        "cacheRead": 0,
+        "cacheWrite": 0
+      },
+      "compat": {
+        "supportsReasoningEffort": false,
+        "supportsDeveloperRole": false,
+        "maxTokensField": "max_tokens"
+      }
+    },
+    {
+      "id": "google/gemma-3-27b-it",
+      "name": "Gemma-3-27B-IT",
+      "company": "google",
+      "reasoning": true,
+      "input": [
+        "text",
+        "image"
+      ],
+      "contextWindow": 131072,
+      "maxTokens": 8192,
+      "cost": {
+        "input": 0,
+        "output": 0,
+        "cacheRead": 0,
+        "cacheWrite": 0
+      },
+      "compat": {
+        "supportsReasoningEffort": false,
+        "supportsDeveloperRole": false,
+        "maxTokensField": "max_tokens"
+      }
+    },
+    {
+      "id": "google/gemma-2-2b-it",
+      "name": "Gemma 2 2b It",
+      "company": "google",
+      "reasoning": false,
+      "input": [
+        "text"
+      ],
+      "contextWindow": 128000,
+      "maxTokens": 4096,
+      "cost": {
+        "input": 0,
+        "output": 0,
+        "cacheRead": 0,
+        "cacheWrite": 0
+      },
+      "compat": {
+        "supportsReasoningEffort": false,
+        "supportsDeveloperRole": false,
+        "maxTokensField": "max_tokens"
+      }
+    },
+    {
+      "id": "meta/llama-4-maverick-17b-128e-instruct",
+      "name": "Llama 4 Maverick 17b 128e Instruct",
+      "company": "meta",
+      "reasoning": false,
+      "input": [
+        "text",
+        "image"
+      ],
+      "contextWindow": 128000,
+      "maxTokens": 4096,
+      "cost": {
+        "input": 0,
+        "output": 0,
+        "cacheRead": 0,
+        "cacheWrite": 0
+      },
+      "compat": {
+        "supportsReasoningEffort": false,
+        "supportsDeveloperRole": false,
+        "maxTokensField": "max_tokens"
+      }
+    },
+    {
+      "id": "meta/llama-3.1-8b-instruct",
+      "name": "Llama 3.1 8B Instruct",
+      "company": "meta",
+      "reasoning": false,
+      "input": [
+        "text"
+      ],
+      "contextWindow": 16000,
+      "maxTokens": 4096,
+      "cost": {
+        "input": 0,
+        "output": 0,
+        "cacheRead": 0,
+        "cacheWrite": 0
+      },
+      "compat": {
+        "supportsReasoningEffort": false,
+        "supportsDeveloperRole": false,
+        "maxTokensField": "max_tokens"
+      }
+    },
+    {
+      "id": "meta/llama-3.3-70b-instruct",
+      "name": "Llama 3.3 70b Instruct",
+      "company": "meta",
+      "reasoning": false,
+      "input": [
+        "text"
+      ],
+      "contextWindow": 128000,
+      "maxTokens": 4096,
+      "cost": {
+        "input": 0,
+        "output": 0,
+        "cacheRead": 0,
+        "cacheWrite": 0
+      },
+      "compat": {
+        "supportsReasoningEffort": false,
+        "supportsDeveloperRole": false,
+        "maxTokensField": "max_tokens"
+      }
+    },
+    {
+      "id": "meta/llama-3.2-90b-vision-instruct",
+      "name": "Llama-3.2-90B-Vision-Instruct",
+      "company": "meta",
+      "reasoning": false,
+      "input": [
+        "text",
+        "image"
+      ],
+      "contextWindow": 128000,
+      "maxTokens": 8192,
+      "cost": {
+        "input": 0,
+        "output": 0,
+        "cacheRead": 0,
+        "cacheWrite": 0
+      },
+      "compat": {
+        "supportsReasoningEffort": false,
+        "supportsDeveloperRole": false,
+        "maxTokensField": "max_tokens"
+      }
+    },
+    {
+      "id": "meta/llama-3.2-11b-vision-instruct",
+      "name": "Llama 3.2 11b Vision Instruct",
+      "company": "meta",
+      "reasoning": false,
+      "input": [
+        "text",
+        "image"
+      ],
+      "contextWindow": 128000,
+      "maxTokens": 4096,
+      "cost": {
+        "input": 0,
+        "output": 0,
+        "cacheRead": 0,
+        "cacheWrite": 0
+      },
+      "compat": {
+        "supportsReasoningEffort": false,
+        "supportsDeveloperRole": false,
+        "maxTokensField": "max_tokens"
+      }
+    },
+    {
+      "id": "meta/llama-3.2-1b-instruct",
+      "name": "Llama 3.2 1b Instruct",
+      "company": "meta",
+      "reasoning": false,
+      "input": [
+        "text"
+      ],
+      "contextWindow": 128000,
+      "maxTokens": 4096,
+      "cost": {
+        "input": 0,
+        "output": 0,
+        "cacheRead": 0,
+        "cacheWrite": 0
+      },
+      "compat": {
+        "supportsReasoningEffort": false,
+        "supportsDeveloperRole": false,
+        "maxTokensField": "max_tokens"
+      }
+    },
+    {
+      "id": "meta/llama-3.2-3b-instruct",
+      "name": "Llama 3.2 3B Instruct",
+      "company": "meta",
+      "reasoning": false,
+      "input": [
+        "text"
+      ],
+      "contextWindow": 32768,
+      "maxTokens": 32000,
+      "cost": {
+        "input": 0,
+        "output": 0,
+        "cacheRead": 0,
+        "cacheWrite": 0
+      },
+      "compat": {
+        "supportsReasoningEffort": false,
+        "supportsDeveloperRole": false,
+        "maxTokensField": "max_tokens"
+      }
+    },
+    {
+      "id": "meta/esm2-650m",
+      "name": "Esm2 650m",
+      "company": "meta",
+      "reasoning": false,
+      "input": [
+        "text"
+      ],
+      "contextWindow": 128000,
+      "maxTokens": 8192,
+      "cost": {
+        "input": 0,
+        "output": 0,
+        "cacheRead": 0,
+        "cacheWrite": 0
+      },
+      "compat": {
+        "supportsReasoningEffort": false,
+        "supportsDeveloperRole": false,
+        "maxTokensField": "max_tokens"
+      }
+    },
+    {
+      "id": "meta/llama-3.1-70b-instruct",
+      "name": "Llama 3.1 70b Instruct",
+      "company": "meta",
+      "reasoning": false,
+      "input": [
+        "text"
+      ],
+      "contextWindow": 128000,
+      "maxTokens": 4096,
+      "cost": {
+        "input": 0,
+        "output": 0,
+        "cacheRead": 0,
+        "cacheWrite": 0
+      },
+      "compat": {
+        "supportsReasoningEffort": false,
+        "supportsDeveloperRole": false,
+        "maxTokensField": "max_tokens"
+      }
+    },
+    {
+      "id": "meta/esmfold",
+      "name": "Esmfold",
+      "company": "meta",
+      "reasoning": false,
+      "input": [
+        "text"
+      ],
+      "contextWindow": 128000,
+      "maxTokens": 8192,
+      "cost": {
+        "input": 0,
+        "output": 0,
+        "cacheRead": 0,
+        "cacheWrite": 0
+      },
+      "compat": {
+        "supportsReasoningEffort": false,
+        "supportsDeveloperRole": false,
+        "maxTokensField": "max_tokens"
+      }
+    },
+    {
+      "id": "microsoft/phi-4-multimodal-instruct",
+      "name": "Phi 4 Multimodal",
+      "company": "microsoft",
+      "reasoning": false,
+      "input": [
+        "text"
+      ],
+      "contextWindow": 128000,
+      "maxTokens": 16384,
+      "cost": {
+        "input": 0,
+        "output": 0,
+        "cacheRead": 0,
+        "cacheWrite": 0
+      },
+      "compat": {
+        "supportsReasoningEffort": false,
+        "supportsDeveloperRole": false,
+        "maxTokensField": "max_tokens"
+      }
+    },
+    {
+      "id": "microsoft/phi-4-mini-instruct",
+      "name": "Phi-4-Mini",
+      "company": "microsoft",
+      "reasoning": true,
+      "input": [
+        "text",
+        "image"
+      ],
+      "contextWindow": 131072,
+      "maxTokens": 8192,
+      "cost": {
+        "input": 0,
+        "output": 0,
+        "cacheRead": 0,
+        "cacheWrite": 0
+      },
+      "compat": {
+        "supportsReasoningEffort": false,
+        "supportsDeveloperRole": false,
+        "maxTokensField": "max_tokens"
+      }
+    },
+    {
+      "id": "minimaxai/minimax-m2.7",
+      "name": "MiniMax-M2.7",
+      "company": "minimaxai",
+      "reasoning": true,
+      "input": [
+        "text"
+      ],
+      "contextWindow": 204800,
+      "maxTokens": 131072,
+      "cost": {
+        "input": 0,
+        "output": 0,
+        "cacheRead": 0,
+        "cacheWrite": 0
+      },
+      "compat": {
+        "supportsReasoningEffort": false,
+        "supportsDeveloperRole": false,
+        "maxTokensField": "max_tokens"
+      }
+    },
+    {
+      "id": "minimaxai/minimax-m2.5",
+      "name": "MiniMax-M2.5",
+      "company": "minimaxai",
+      "reasoning": true,
+      "input": [
+        "text"
+      ],
+      "contextWindow": 204800,
+      "maxTokens": 131072,
+      "cost": {
+        "input": 0,
+        "output": 0,
+        "cacheRead": 0,
+        "cacheWrite": 0
+      },
+      "compat": {
+        "supportsReasoningEffort": false,
+        "supportsDeveloperRole": false,
+        "maxTokensField": "max_tokens"
+      }
+    },
+    {
+      "id": "mistralai/mistral-small-4-119b-2603",
+      "name": "Mistral Small 4 119b 2603",
+      "company": "mistralai",
+      "reasoning": false,
+      "input": [
+        "text"
+      ],
+      "contextWindow": 128000,
+      "maxTokens": 8192,
+      "cost": {
+        "input": 0,
+        "output": 0,
+        "cacheRead": 0,
+        "cacheWrite": 0
+      },
+      "compat": {
+        "supportsReasoningEffort": false,
+        "supportsDeveloperRole": false,
+        "maxTokensField": "max_tokens",
+        "requiresToolResultName": true,
+        "requiresThinkingAsText": true,
+        "requiresMistralToolIds": true
+      }
+    },
+    {
+      "id": "mistralai/devstral-2-123b-instruct-2512",
+      "name": "Devstral-2-123B-Instruct-2512",
+      "company": "mistralai",
+      "reasoning": true,
+      "input": [
+        "text"
+      ],
+      "contextWindow": 262144,
+      "maxTokens": 262144,
+      "cost": {
+        "input": 0,
+        "output": 0,
+        "cacheRead": 0,
+        "cacheWrite": 0
+      },
+      "compat": {
+        "supportsReasoningEffort": false,
+        "supportsDeveloperRole": false,
+        "maxTokensField": "max_tokens",
+        "requiresToolResultName": true,
+        "requiresThinkingAsText": true,
+        "requiresMistralToolIds": true
+      }
+    },
+    {
+      "id": "mistralai/mistral-large-3-675b-instruct-2512",
+      "name": "Mistral Large 3 675B Instruct 2512",
+      "company": "mistralai",
+      "reasoning": false,
+      "input": [
+        "text",
+        "image"
+      ],
+      "contextWindow": 262144,
+      "maxTokens": 262144,
+      "cost": {
+        "input": 0,
+        "output": 0,
+        "cacheRead": 0,
+        "cacheWrite": 0
+      },
+      "compat": {
+        "supportsReasoningEffort": false,
+        "supportsDeveloperRole": false,
+        "maxTokensField": "max_tokens",
+        "requiresToolResultName": true,
+        "requiresThinkingAsText": true,
+        "requiresMistralToolIds": true
+      }
+    },
+    {
+      "id": "mistralai/magistral-small-2506",
+      "name": "Magistral Small 2506",
+      "company": "mistralai",
+      "reasoning": false,
+      "input": [
+        "text"
+      ],
+      "contextWindow": 32768,
+      "maxTokens": 32768,
+      "cost": {
+        "input": 0,
+        "output": 0,
+        "cacheRead": 0,
+        "cacheWrite": 0
+      },
+      "compat": {
+        "supportsReasoningEffort": false,
+        "supportsDeveloperRole": false,
+        "maxTokensField": "max_tokens",
+        "requiresToolResultName": true,
+        "requiresThinkingAsText": true,
+        "requiresMistralToolIds": true
+      }
+    },
+    {
+      "id": "mistralai/mistral-medium-3-instruct",
+      "name": "Mistral Medium 3",
+      "company": "mistralai",
+      "reasoning": false,
+      "input": [
+        "text",
+        "image"
+      ],
+      "contextWindow": 131072,
+      "maxTokens": 32768,
+      "cost": {
+        "input": 0,
+        "output": 0,
+        "cacheRead": 0,
+        "cacheWrite": 0
+      },
+      "compat": {
+        "supportsReasoningEffort": false,
+        "supportsDeveloperRole": false,
+        "maxTokensField": "max_tokens",
+        "requiresToolResultName": true,
+        "requiresThinkingAsText": true,
+        "requiresMistralToolIds": true
+      }
+    },
+    {
+      "id": "mistralai/mistral-nemotron",
+      "name": "Mistral Nemotron",
+      "company": "mistralai",
+      "reasoning": false,
+      "input": [
+        "text"
+      ],
+      "contextWindow": 128000,
+      "maxTokens": 8192,
+      "cost": {
+        "input": 0,
+        "output": 0,
+        "cacheRead": 0,
+        "cacheWrite": 0
+      },
+      "compat": {
+        "supportsReasoningEffort": false,
+        "supportsDeveloperRole": false,
+        "maxTokensField": "max_tokens",
+        "requiresToolResultName": true,
+        "requiresThinkingAsText": true,
+        "requiresMistralToolIds": true
+      }
+    },
+    {
+      "id": "mistralai/mistral-7b-instruct-v03",
+      "name": "Mistral-7B-Instruct-v0.3",
+      "company": "mistralai",
+      "reasoning": false,
+      "input": [
+        "text"
+      ],
+      "contextWindow": 65536,
+      "maxTokens": 65536,
+      "cost": {
+        "input": 0,
+        "output": 0,
+        "cacheRead": 0,
+        "cacheWrite": 0
+      },
+      "compat": {
+        "supportsReasoningEffort": false,
+        "supportsDeveloperRole": false,
+        "maxTokensField": "max_tokens",
+        "requiresToolResultName": true,
+        "requiresThinkingAsText": true,
+        "requiresMistralToolIds": true
+      }
+    },
+    {
+      "id": "mistralai/mixtral-8x22b-instruct",
+      "name": "Mixtral 8x22B Instruct",
+      "company": "mistralai",
+      "reasoning": false,
+      "input": [
+        "text"
+      ],
+      "contextWindow": 65536,
+      "maxTokens": 13108,
+      "cost": {
+        "input": 0,
+        "output": 0,
+        "cacheRead": 0,
+        "cacheWrite": 0
+      },
+      "compat": {
+        "supportsReasoningEffort": false,
+        "supportsDeveloperRole": false,
+        "maxTokensField": "max_tokens",
+        "requiresToolResultName": true,
+        "requiresThinkingAsText": true,
+        "requiresMistralToolIds": true
+      }
+    },
+    {
+      "id": "mistralai/mixtral-8x7b-instruct",
+      "name": "Mixtral 8x7B Instruct",
+      "company": "mistralai",
+      "reasoning": false,
+      "input": [
+        "text"
+      ],
+      "contextWindow": 32768,
+      "maxTokens": 16384,
+      "cost": {
+        "input": 0,
+        "output": 0,
+        "cacheRead": 0,
+        "cacheWrite": 0
+      },
+      "compat": {
+        "supportsReasoningEffort": false,
+        "supportsDeveloperRole": false,
+        "maxTokensField": "max_tokens",
+        "requiresToolResultName": true,
+        "requiresThinkingAsText": true,
+        "requiresMistralToolIds": true
+      }
+    },
+    {
+      "id": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning",
+      "name": "Nemotron 3 Nano Omni",
+      "company": "nvidia",
+      "reasoning": true,
+      "input": [
+        "text",
+        "image"
+      ],
+      "contextWindow": 256000,
+      "maxTokens": 65536,
+      "cost": {
+        "input": 0,
+        "output": 0,
+        "cacheRead": 0,
+        "cacheWrite": 0
+      },
+      "compat": {
+        "supportsReasoningEffort": false,
+        "supportsDeveloperRole": false,
+        "maxTokensField": "max_tokens"
+      }
+    },
+    {
+      "id": "nvidia/llama-nemotron-rerank-vl-1b-v2",
+      "name": "Llama Nemotron Rerank Vl 1b V2",
+      "company": "nvidia",
+      "reasoning": false,
+      "input": [
+        "text",
+        "image"
+      ],
+      "contextWindow": 128000,
+      "maxTokens": 4096,
+      "cost": {
+        "input": 0,
+        "output": 0,
+        "cacheRead": 0,
+        "cacheWrite": 0
+      },
+      "compat": {
+        "supportsReasoningEffort": false,
+        "supportsDeveloperRole": false,
+        "maxTokensField": "max_tokens"
+      }
+    },
+    {
+      "id": "nvidia/nemotron-voicechat",
+      "name": "Nemotron Voicechat",
+      "company": "nvidia",
+      "reasoning": false,
+      "input": [
+        "text"
+      ],
+      "contextWindow": 128000,
+      "maxTokens": 8192,
+      "cost": {
+        "input": 0,
+        "output": 0,
+        "cacheRead": 0,
+        "cacheWrite": 0
+      },
+      "compat": {
+        "supportsReasoningEffort": false,
+        "supportsDeveloperRole": false,
+        "maxTokensField": "max_tokens"
+      }
+    },
+    {
+      "id": "nvidia/nemotron-3-super-120b-a12b",
+      "name": "Nemotron 3 Super",
+      "company": "nvidia",
+      "reasoning": true,
+      "input": [
+        "text"
+      ],
+      "contextWindow": 262144,
+      "maxTokens": 262144,
+      "cost": {
+        "input": 0,
+        "output": 0,
+        "cacheRead": 0,
+        "cacheWrite": 0
+      },
+      "compat": {
+        "supportsReasoningEffort": false,
+        "supportsDeveloperRole": false,
+        "maxTokensField": "max_tokens"
+      }
+    },
+    {
+      "id": "nvidia/gliner-pii",
+      "name": "Gliner Pii",
+      "company": "nvidia",
+      "reasoning": false,
+      "input": [
+        "text"
+      ],
+      "contextWindow": 128000,
+      "maxTokens": 4096,
+      "cost": {
+        "input": 0,
+        "output": 0,
+        "cacheRead": 0,
+        "cacheWrite": 0
+      },
+      "compat": {
+        "supportsReasoningEffort": false,
+        "supportsDeveloperRole": false,
+        "maxTokensField": "max_tokens"
+      }
+    },
+    {
+      "id": "nvidia/cosmos-transfer2_5-2b",
+      "name": "cosmos-transfer2.5-2b",
+      "company": "nvidia",
+      "reasoning": false,
+      "input": [
+        "text",
+        "image"
+      ],
+      "contextWindow": 128000,
+      "maxTokens": 4096,
+      "cost": {
+        "input": 0,
+        "output": 0,
+        "cacheRead": 0,
+        "cacheWrite": 0
+      },
+      "compat": {
+        "supportsReasoningEffort": false,
+        "supportsDeveloperRole": false,
+        "maxTokensField": "max_tokens"
+      }
+    },
+    {
+      "id": "nvidia/nvidia-nemotron-nano-9b-v2",
+      "name": "Nvidia Nemotron Nano 9b V2",
+      "company": "nvidia",
+      "reasoning": true,
+      "input": [
+        "text"
+      ],
+      "contextWindow": 131072,
+      "maxTokens": 131072,
+      "cost": {
+        "input": 0,
+        "output": 0,
+        "cacheRead": 0,
+        "cacheWrite": 0
+      },
+      "compat": {
+        "supportsReasoningEffort": false,
+        "supportsDeveloperRole": false,
+        "maxTokensField": "max_tokens"
+      }
+    },
+    {
+      "id": "nvidia/llama-3_3-nemotron-super-49b-v1_5",
+      "name": "Llama 3.3 Nemotron Super 49B v1.5",
+      "company": "nvidia",
+      "reasoning": true,
+      "input": [
+        "text"
+      ],
+      "contextWindow": 131072,
+      "maxTokens": 131072,
+      "cost": {
+        "input": 0,
+        "output": 0,
+        "cacheRead": 0,
+        "cacheWrite": 0
+      },
+      "compat": {
+        "supportsReasoningEffort": false,
+        "supportsDeveloperRole": false,
+        "maxTokensField": "max_tokens"
+      }
+    },
+    {
+      "id": "nvidia/cosmos-transfer1-7b",
+      "name": "Cosmos Transfer1 7b",
+      "company": "nvidia",
+      "reasoning": false,
+      "input": [
+        "text",
+        "image"
+      ],
+      "contextWindow": 128000,
+      "maxTokens": 4096,
+      "cost": {
+        "input": 0,
+        "output": 0,
+        "cacheRead": 0,
+        "cacheWrite": 0
+      },
+      "compat": {
+        "supportsReasoningEffort": false,
+        "supportsDeveloperRole": false,
+        "maxTokensField": "max_tokens"
+      }
+    },
+    {
+      "id": "nvidia/magpie-tts-zeroshot",
+      "name": "Magpie Tts Zeroshot",
+      "company": "nvidia",
+      "reasoning": false,
+      "input": [
+        "text"
+      ],
+      "contextWindow": 128000,
+      "maxTokens": 4096,
+      "cost": {
+        "input": 0,
+        "output": 0,
+        "cacheRead": 0,
+        "cacheWrite": 0
+      },
+      "compat": {
+        "supportsReasoningEffort": false,
+        "supportsDeveloperRole": false,
+        "maxTokensField": "max_tokens"
+      }
+    },
+    {
+      "id": "nvidia/llama-3_3-nemotron-super-49b-v1",
+      "name": "Llama 3.3 Nemotron Super 49B v1",
+      "company": "nvidia",
+      "reasoning": true,
+      "input": [
+        "text"
+      ],
+      "contextWindow": 131072,
+      "maxTokens": 131072,
+      "cost": {
+        "input": 0,
+        "output": 0,
+        "cacheRead": 0,
+        "cacheWrite": 0
+      },
+      "compat": {
+        "supportsReasoningEffort": false,
+        "supportsDeveloperRole": false,
+        "maxTokensField": "max_tokens"
+      }
+    },
+    {
+      "id": "nvidia/cosmos-predict1-5b",
+      "name": "Cosmos Predict1 5b",
+      "company": "nvidia",
+      "reasoning": false,
+      "input": [
+        "text",
+        "image"
+      ],
+      "contextWindow": 128000,
+      "maxTokens": 4096,
+      "cost": {
+        "input": 0,
+        "output": 0,
+        "cacheRead": 0,
+        "cacheWrite": 0
+      },
+      "compat": {
+        "supportsReasoningEffort": false,
+        "supportsDeveloperRole": false,
+        "maxTokensField": "max_tokens"
+      }
+    },
+    {
+      "id": "nvidia/nemotron-3-nano-30b-a3b",
+      "name": "Nemotron 3 Nano 30b A3b",
+      "company": "nvidia",
+      "reasoning": true,
+      "input": [
+        "text"
+      ],
+      "contextWindow": 131072,
+      "maxTokens": 131072,
+      "cost": {
+        "input": 0,
+        "output": 0,
+        "cacheRead": 0,
+        "cacheWrite": 0
+      },
+      "compat": {
+        "supportsReasoningEffort": false,
+        "supportsDeveloperRole": false,
+        "maxTokensField": "max_tokens"
+      }
+    },
+    {
+      "id": "nvidia/nemotron-mini-4b-instruct",
+      "name": "Nemotron Mini 4b Instruct",
+      "company": "nvidia",
+      "reasoning": false,
+      "input": [
+        "text"
+      ],
+      "contextWindow": 128000,
+      "maxTokens": 8192,
+      "cost": {
+        "input": 0,
+        "output": 0,
+        "cacheRead": 0,
+        "cacheWrite": 0
+      },
+      "compat": {
+        "supportsReasoningEffort": false,
+        "supportsDeveloperRole": false,
+        "maxTokensField": "max_tokens"
+      }
+    },
+    {
+      "id": "nvidia/rerank-qa-mistral-4b",
+      "name": "Rerank Qa Mistral 4b",
+      "company": "nvidia",
+      "reasoning": false,
+      "input": [
+        "text"
+      ],
+      "contextWindow": 128000,
+      "maxTokens": 4096,
+      "cost": {
+        "input": 0,
+        "output": 0,
+        "cacheRead": 0,
+        "cacheWrite": 0
+      },
+      "compat": {
+        "supportsReasoningEffort": false,
+        "supportsDeveloperRole": false,
+        "maxTokensField": "max_tokens"
+      }
+    },
+    {
+      "id": "openai/gpt-oss-20b",
+      "name": "GPT OSS 20B",
+      "company": "openai",
+      "reasoning": true,
+      "input": [
+        "text"
+      ],
+      "contextWindow": 131072,
+      "maxTokens": 32768,
+      "cost": {
+        "input": 0,
+        "output": 0,
+        "cacheRead": 0,
+        "cacheWrite": 0
+      },
+      "compat": {
+        "supportsReasoningEffort": false,
+        "supportsDeveloperRole": false,
+        "maxTokensField": "max_tokens"
+      }
+    },
+    {
+      "id": "openai/gpt-oss-120b",
+      "name": "GPT-OSS-120B",
+      "company": "openai",
+      "reasoning": true,
+      "input": [
+        "text"
+      ],
+      "contextWindow": 128000,
+      "maxTokens": 8192,
+      "cost": {
+        "input": 0,
+        "output": 0,
+        "cacheRead": 0,
+        "cacheWrite": 0
+      },
+      "compat": {
+        "supportsReasoningEffort": false,
+        "supportsDeveloperRole": false,
+        "maxTokensField": "max_tokens"
+      }
+    },
+    {
+      "id": "openai/whisper-large-v3",
+      "name": "Whisper Large v3",
+      "company": "openai",
+      "reasoning": false,
+      "input": [
+        "text"
+      ],
+      "contextWindow": 128000,
+      "maxTokens": 4096,
+      "cost": {
+        "input": 0,
+        "output": 0,
+        "cacheRead": 0,
+        "cacheWrite": 0
+      },
+      "compat": {
+        "supportsReasoningEffort": false,
+        "supportsDeveloperRole": false,
+        "maxTokensField": "max_tokens"
+      }
+    },
+    {
+      "id": "qwen/qwen3.5-122b-a10b",
+      "name": "Qwen3.5 122B-A10B",
+      "company": "qwen",
+      "reasoning": true,
+      "input": [
+        "text",
+        "image"
+      ],
+      "contextWindow": 262144,
+      "maxTokens": 65536,
+      "cost": {
+        "input": 0,
+        "output": 0,
+        "cacheRead": 0,
+        "cacheWrite": 0
+      },
+      "compat": {
+        "supportsReasoningEffort": false,
+        "supportsDeveloperRole": false,
+        "maxTokensField": "max_tokens"
+      }
+    },
+    {
+      "id": "qwen/qwen3.5-397b-a17b",
+      "name": "Qwen3.5-397B-A17B",
+      "company": "qwen",
+      "reasoning": true,
+      "input": [
+        "text",
+        "image"
+      ],
+      "contextWindow": 262144,
+      "maxTokens": 8192,
+      "cost": {
+        "input": 0,
+        "output": 0,
+        "cacheRead": 0,
+        "cacheWrite": 0
+      },
+      "compat": {
+        "supportsReasoningEffort": false,
+        "supportsDeveloperRole": false,
+        "maxTokensField": "max_tokens"
+      }
+    },
+    {
+      "id": "qwen/qwen-image-edit",
+      "name": "Qwen Image Edit",
+      "company": "qwen",
+      "reasoning": false,
+      "input": [
+        "text",
+        "image"
+      ],
+      "contextWindow": 128000,
+      "maxTokens": 16384,
+      "cost": {
+        "input": 0,
+        "output": 0,
+        "cacheRead": 0,
+        "cacheWrite": 0
+      },
+      "compat": {
+        "supportsReasoningEffort": false,
+        "supportsDeveloperRole": false,
+        "maxTokensField": "max_tokens"
+      }
+    },
+    {
+      "id": "qwen/qwen-image",
+      "name": "Qwen Image",
+      "company": "qwen",
+      "reasoning": false,
+      "input": [
+        "text",
+        "image"
+      ],
+      "contextWindow": 128000,
+      "maxTokens": 16384,
+      "cost": {
+        "input": 0,
+        "output": 0,
+        "cacheRead": 0,
+        "cacheWrite": 0
+      },
+      "compat": {
+        "supportsReasoningEffort": false,
+        "supportsDeveloperRole": false,
+        "maxTokensField": "max_tokens"
+      }
+    },
+    {
+      "id": "qwen/qwen3-coder-480b-a35b-instruct",
+      "name": "Qwen3 Coder 480B A35B Instruct",
+      "company": "qwen",
+      "reasoning": false,
+      "input": [
+        "text"
+      ],
+      "contextWindow": 262144,
+      "maxTokens": 66536,
+      "cost": {
+        "input": 0,
+        "output": 0,
+        "cacheRead": 0,
+        "cacheWrite": 0
+      },
+      "compat": {
+        "supportsReasoningEffort": false,
+        "supportsDeveloperRole": false,
+        "maxTokensField": "max_tokens"
+      }
+    },
+    {
+      "id": "qwen/qwen3-next-80b-a3b-instruct",
+      "name": "Qwen3-Next-80B-A3B-Instruct",
+      "company": "qwen",
+      "reasoning": false,
+      "input": [
+        "text"
+      ],
+      "contextWindow": 262144,
+      "maxTokens": 16384,
+      "cost": {
+        "input": 0,
+        "output": 0,
+        "cacheRead": 0,
+        "cacheWrite": 0
+      },
+      "compat": {
+        "supportsReasoningEffort": false,
+        "supportsDeveloperRole": false,
+        "maxTokensField": "max_tokens"
+      }
+    },
+    {
+      "id": "qwen/qwen3-next-80b-a3b-thinking",
+      "name": "Qwen3-Next-80B-A3B-Thinking",
+      "company": "qwen",
+      "reasoning": true,
+      "input": [
+        "text"
+      ],
+      "contextWindow": 262144,
+      "maxTokens": 16384,
+      "cost": {
+        "input": 0,
+        "output": 0,
+        "cacheRead": 0,
+        "cacheWrite": 0
+      },
+      "compat": {
+        "supportsReasoningEffort": false,
+        "supportsDeveloperRole": false,
+        "maxTokensField": "max_tokens"
+      }
+    },
+    {
+      "id": "qwen/qwen2.5-coder-32b-instruct",
+      "name": "Qwen2.5 Coder 32b Instruct",
+      "company": "qwen",
+      "reasoning": false,
+      "input": [
+        "text"
+      ],
+      "contextWindow": 128000,
+      "maxTokens": 4096,
+      "cost": {
+        "input": 0,
+        "output": 0,
+        "cacheRead": 0,
+        "cacheWrite": 0
+      },
+      "compat": {
+        "supportsReasoningEffort": false,
+        "supportsDeveloperRole": false,
+        "maxTokensField": "max_tokens"
+      }
+    },
+    {
+      "id": "sarvamai/sarvam-m",
+      "name": "Sarvam M",
+      "company": "sarvamai",
+      "reasoning": false,
+      "input": [
+        "text"
+      ],
+      "contextWindow": 128000,
+      "maxTokens": 8192,
+      "cost": {
+        "input": 0,
+        "output": 0,
+        "cacheRead": 0,
+        "cacheWrite": 0
+      },
+      "compat": {
+        "supportsReasoningEffort": false,
+        "supportsDeveloperRole": false,
+        "maxTokensField": "max_tokens"
+      }
+    },
+    {
+      "id": "stepfun-ai/step-3.7-flash",
+      "name": "Step 3.7 Flash",
+      "company": "stepfun-ai",
+      "reasoning": true,
+      "input": [
+        "text",
+        "image"
+      ],
+      "contextWindow": 256000,
+      "maxTokens": 16384,
+      "cost": {
+        "input": 0,
+        "output": 0,
+        "cacheRead": 0,
+        "cacheWrite": 0
+      },
+      "compat": {
+        "supportsReasoningEffort": false,
+        "supportsDeveloperRole": false,
+        "maxTokensField": "max_tokens"
+      }
+    },
+    {
+      "id": "stepfun-ai/step-3.5-flash",
+      "name": "Step 3.5 Flash",
+      "company": "stepfun-ai",
+      "reasoning": true,
+      "input": [
+        "text"
+      ],
+      "contextWindow": 256000,
+      "maxTokens": 16384,
+      "cost": {
+        "input": 0,
+        "output": 0,
+        "cacheRead": 0,
+        "cacheWrite": 0
+      },
+      "compat": {
+        "supportsReasoningEffort": false,
+        "supportsDeveloperRole": false,
+        "maxTokensField": "max_tokens"
+      }
+    },
+    {
+      "id": "upstage/solar-10_7b-instruct",
+      "name": "solar-10.7b-instruct",
+      "company": "upstage",
+      "reasoning": false,
+      "input": [
+        "text"
+      ],
+      "contextWindow": 128000,
+      "maxTokens": 8192,
+      "cost": {
+        "input": 0,
+        "output": 0,
+        "cacheRead": 0,
+        "cacheWrite": 0
+      },
+      "compat": {
+        "supportsReasoningEffort": false,
+        "supportsDeveloperRole": false,
+        "maxTokensField": "max_tokens"
+      }
+    }
+  ],
+  "thinkingConfigs": {
+    "z-ai/glm4.7": {
+      "enableKwargs": {
+        "enable_thinking": true,
+        "clear_thinking": false
+      },
+      "disableKwargs": {
+        "enable_thinking": false
+      }
+    },
+    "z-ai/glm-5.1": {
+      "enableKwargs": {
+        "enable_thinking": true,
+        "clear_thinking": false
+      },
+      "disableKwargs": {
+        "enable_thinking": false
+      }
+    },
+    "mistralai/devstral-2-123b-instruct-2512": {
+      "enableKwargs": {
+        "enable_thinking": true
+      },
+      "disableKwargs": {
+        "enable_thinking": false
+      }
+    },
+    "qwen/qwen3.5-122b-a10b": {
+      "enableKwargs": {
+        "enable_thinking": true
+      },
+      "disableKwargs": {
+        "enable_thinking": false
+      }
+    },
+    "qwen/qwen3-next-80b-a3b-thinking": {
+      "enableKwargs": {
+        "enable_thinking": true
+      },
+      "disableKwargs": {
+        "enable_thinking": false
+      }
+    },
+    "qwen/qwen3.5-397b-a17b": {
+      "enableKwargs": {
+        "enable_thinking": true
+      },
+      "disableKwargs": {
+        "enable_thinking": false
+      }
+    },
+    "moonshotai/kimi-k2-thinking": {
+      "enableKwargs": {
+        "thinking": true
+      },
+      "disableKwargs": {
+        "thinking": false
+      },
+      "sendReasoningEffort": true
+    },
+    "moonshotai/kimi-k2-instruct": {
+      "enableKwargs": {
+        "thinking": true
+      },
+      "disableKwargs": {
+        "thinking": false
+      },
+      "sendReasoningEffort": true
+    },
+    "moonshotai/kimi-k2.6": {
+      "enableKwargs": {
+        "thinking": true
+      },
+      "disableKwargs": {
+        "thinking": false
+      },
+      "sendReasoningEffort": true
+    },
+    "deepseek-ai/deepseek-v3.2": {
+      "enableKwargs": {
+        "thinking": true
+      },
+      "disableKwargs": {
+        "thinking": false
+      }
+    },
+    "deepseek-ai/deepseek-v3.1-terminus": {
+      "enableKwargs": {
+        "thinking": true
+      },
+      "disableKwargs": {
+        "thinking": false
+      }
+    },
+    "deepseek-ai/deepseek-v4-flash": {
+      "enableKwargs": {
+        "thinking": true
+      },
+      "disableKwargs": {
+        "thinking": false
+      },
+      "includeReasoningEffortInKwargs": true
+    },
+    "deepseek-ai/deepseek-v4-pro": {
+      "enableKwargs": {
+        "thinking": true
+      },
+      "disableKwargs": {
+        "thinking": false
+      },
+      "includeReasoningEffortInKwargs": true
+    },
+    "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning": {
+      "enableKwargs": {
+        "thinking": true
+      },
+      "disableKwargs": {
+        "thinking": false
+      }
+    },
+    "nvidia/nemotron-3-nano-30b-a3b": {
+      "enableKwargs": {
+        "thinking": true
+      },
+      "disableKwargs": {
+        "thinking": false
+      }
+    },
+    "nvidia/nvidia-nemotron-nano-9b-v2": {
+      "enableKwargs": {
+        "thinking": true
+      },
+      "disableKwargs": {
+        "thinking": false
+      }
+    },
+    "nvidia/llama-3_3-nemotron-super-49b-v1_5": {
+      "enableKwargs": {
+        "thinking": true
+      },
+      "disableKwargs": {
+        "thinking": false
+      }
+    },
+    "nvidia/llama-3_3-nemotron-super-49b-v1": {
+      "enableKwargs": {
+        "thinking": true
+      },
+      "disableKwargs": {
+        "thinking": false
+      }
+    },
+    "nvidia/nemotron-3-super-120b-a12b": {
+      "enableKwargs": {
+        "thinking": true
+      },
+      "disableKwargs": {
+        "thinking": false
+      }
+    },
+    "minimaxai/minimax-m2.7": {
+      "enableKwargs": {
+        "enable_thinking": true
+      },
+      "disableKwargs": {
+        "enable_thinking": false
+      }
+    },
+    "minimaxai/minimax-m2.5": {
+      "enableKwargs": {
+        "enable_thinking": true
+      },
+      "disableKwargs": {
+        "enable_thinking": false
+      }
+    },
+    "microsoft/phi-4-mini-instruct": {
+      "enableKwargs": {
+        "enable_thinking": true
+      },
+      "disableKwargs": {
+        "enable_thinking": false
+      }
+    },
+    "stepfun-ai/step-3.7-flash": {
+      "enableKwargs": {
+        "enable_thinking": true
+      },
+      "disableKwargs": {
+        "enable_thinking": false
+      }
+    },
+    "stepfun-ai/step-3.5-flash": {
+      "enableKwargs": {
+        "enable_thinking": true
+      },
+      "disableKwargs": {
+        "enable_thinking": false
+      }
+    },
+    "google/gemma-4-31b-it": {
+      "enableKwargs": {
+        "enable_thinking": true
+      },
+      "disableKwargs": {
+        "enable_thinking": false
+      }
+    },
+    "google/gemma-3-27b-it": {
+      "enableKwargs": {
+        "enable_thinking": true
+      },
+      "disableKwargs": {
+        "enable_thinking": false
+      }
+    },
+    "openai/gpt-oss-120b": {
+      "enableKwargs": {
+        "enable_thinking": true
+      },
+      "disableKwargs": {
+        "enable_thinking": false
+      }
+    },
+    "openai/gpt-oss-20b": {
+      "enableKwargs": {
+        "enable_thinking": true
+      },
+      "disableKwargs": {
+        "enable_thinking": false
+      }
+    }
+  }
+}
