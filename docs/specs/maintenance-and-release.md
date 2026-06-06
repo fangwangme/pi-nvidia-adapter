@@ -39,24 +39,97 @@ The script runs entirely offline (meaning it needs zero API keys or authorizatio
 
 ## 3. Releases & Versioning
 
-### Release Checklist
-To issue a new release of `pi-nvidia-adapter`:
+To ensure stability, the repository follows a strict **Branch-PR-Merge-Tag-Release** pipeline.
 
-1. **Verify Local Status**: Ensure you are in `.worktrees/dev` and type check passes:
+### Step 1: Preparation (in `.worktrees/dev`)
+1. **Verify Type-Safety**: Ensure all TypeScript checks pass cleanly.
    ```bash
    bun run check
    ```
-2. **Pull and Regenerate Models**: Run the update script to guarantee that the bundled configuration JSON contains the latest models:
+2. **Synchronize Latest Models**: Run the keyless script to ensure the JSON bundle contains the newest metadata.
    ```bash
    bun run update-models
    ```
-3. **Commit Generated Data**:
-   Ensure both code updates and the generated JSON are staged and committed together:
+3. **Commit & Bump Version**:
+   - Bump the version in `package.json` following Semantic Versioning (SemVer) guidelines.
+   - Stage and commit the codebase changes along with the updated JSON configuration.
+     ```bash
+     git add -A
+     git commit -m "feat: sync models and bump version to vX.Y.Z"
+     ```
+4. **Push to Remote**: Push the local branch to the GitHub repository:
    ```bash
-   git add index.ts src/generated/models.json
-   git commit -m "chore: sync active models from models.dev"
+   git push origin dev
    ```
-4. **Bump Version**:
-   Increment the version string in `package.json` following Semantic Versioning (SemVer).
-5. **Publish / Push**:
-   Push the `dev` branch changes to GitHub, create a Pull Request into `main`, and after merge, create a GitHub release tag (e.g. `v1.2.0`). Users installing via the CLI will automatically pull the updated version.
+
+---
+
+### Step 2: Code Review & Merging (PR Workflow)
+1. **Create Pull Request**: Create a PR from `dev` merging into `main` using the GitHub CLI or the web UI:
+   ```bash
+   gh pr create --title "feat: sync models and update logic to vX.Y.Z" --body "Detailed description of changes..." --base main --head dev
+   ```
+2. **PR Review**: Collaborators/Agents review the logic and tests.
+3. **Merge**: Once approved, merge the PR into `main` (preferably using Squash and Merge to keep the main branch history clean).
+
+---
+
+### Step 3: Tagging & Release (on `main`)
+After merging the PR into the `main` branch, the release process is finalized by tagging and creating a GitHub Release:
+
+1. **Update Local main Branch**:
+   ```bash
+   git checkout main
+   git pull origin main
+   ```
+2. **Create Lightweight Tag**: Tag the commit with the new version (matching `package.json`):
+   ```bash
+   git tag vX.Y.Z
+   git push origin vX.Y.Z
+   ```
+
+---
+
+## 4. Automated Change Log Extraction
+
+We avoid writing release notes manually. To keep development efficient, we use automated Change Log extraction strategies during发版:
+
+### Method A: GitHub CLI Automation (Recommended)
+You can create a GitHub Release and automatically extract the Change Log using the GitHub CLI's `--generate-notes` flag. This parses all squash-merged PRs and commit messages since the previous tag:
+```bash
+# Finalizes the release and auto-generates changelogs directly into GitHub Release
+gh release create vX.Y.Z --title "Release vX.Y.Z" --generate-notes
+```
+
+### Method B: GitHub Actions Automation (CI/CD Pipeline)
+You can automate the release pipeline entirely via a GitHub Actions workflow (e.g., `.github/workflows/release.yml`). When a tag prefixing `v` is pushed, the workflow runs the build and uploads a release with auto-extracted release notes:
+```yaml
+name: Draft Release
+on:
+  push:
+    tags:
+      - 'v*'
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: ${{ github.ref_name }}
+          name: Release ${{ github.ref_name }}
+          generate_release_notes: true  # <--- Automatically extracts and generates Change Log
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+```
+
+### Method C: Local Conventional Commits Changelog (Optional)
+If a local `CHANGELOG.md` document is desired, developers can integrate tools like `conventional-changelog-cli` or `standard-version` to extract git messages based on [Conventional Commits](https://www.conventionalcommits.org/):
+```bash
+# Dry run to preview changelog diff
+bunx standard-version --dry-run
+# Executes standard-version (bumps, updates CHANGELOG.md, and creates tag locally)
+bunx standard-version
+```
