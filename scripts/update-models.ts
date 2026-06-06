@@ -1,6 +1,7 @@
-import { existsSync, readFileSync, writeFileSync, mkdirSync } from "node:fs";
+import { existsSync, writeFileSync, mkdirSync } from "node:fs";
 import { fileURLToPath } from "node:url";
 import { dirname, join } from "node:path";
+import { shouldSkipModel, makeDisplayName, type NimModelEntry } from "../src/shared";
 
 // =============================================================================
 // Configurations & URLs
@@ -34,53 +35,6 @@ interface ModelsDevModel {
 interface ModelsDevProvider {
   id: string;
   models: Record<string, ModelsDevModel>;
-}
-
-interface NimModelEntry {
-  id: string;
-  name: string;
-  company: string;
-  reasoning: boolean;
-  input: ("text" | "image")[];
-  contextWindow: number;
-  maxTokens: number;
-  cost: { input: number; output: number; cacheRead: number; cacheWrite: number };
-  compat?: Record<string, any>;
-  releaseDate?: string;
-  lastUpdated?: string;
-}
-
-// Embedded / non-chat models to skip
-const SKIP_PATTERNS = [
-  /embed/,
-  /clip/,
-  /streampetr/,
-  /vila/,
-  /neva-/,
-  /retriever/,
-  /reward/,
-  /safety/,
-  /guard/,
-  /deplot/,
-  /paligemma/,
-  /translate/,
-  /kosmos-2/,
-  /fuyu-8b/,
-  /starcoder2/
-];
-
-function shouldSkipModel(modelId: string): boolean {
-  const lowerId = modelId.toLowerCase();
-  return SKIP_PATTERNS.some((pattern) => pattern.test(lowerId));
-}
-
-function makeDisplayName(modelId: string): string {
-  const parts = modelId.split("/");
-  const name = parts[parts.length - 1];
-  return name
-    .replace(/-/g, " ")
-    .replace(/_/g, " ")
-    .replace(/\b\w/g, (c) => c.toUpperCase());
 }
 
 // =============================================================================
@@ -252,7 +206,7 @@ async function main() {
 
     const entry: NimModelEntry = {
       id,
-      name: devMeta?.name || makeDisplayName(id),
+      name: makeDisplayName(id, devMeta?.name),
       company: id.split("/")[0] || "other",
       reasoning,
       input: isVision ? ["text", "image"] : ["text"],
@@ -314,8 +268,11 @@ async function main() {
     sortedFinalModels.push(...list);
   }
 
+  // Strip temporary helper fields
+  const outputModels = sortedFinalModels.map(({ releaseDate, lastUpdated, ...rest }) => rest);
+
   const jsonOutput = {
-    models: sortedFinalModels,
+    models: outputModels,
     thinkingConfigs: thinkingConfigs,
   };
 

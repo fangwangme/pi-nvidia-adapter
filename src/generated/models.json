@@ -21,9 +21,7 @@
         "supportsReasoningEffort": false,
         "supportsDeveloperRole": false,
         "maxTokensField": "max_tokens"
-      },
-      "releaseDate": "2026-04-21",
-      "lastUpdated": "2026-04-21"
+      }
     },
     {
       "id": "moonshotai/kimi-k2-thinking",
@@ -45,9 +43,7 @@
         "supportsReasoningEffort": false,
         "supportsDeveloperRole": false,
         "maxTokensField": "max_tokens"
-      },
-      "releaseDate": "2025-11",
-      "lastUpdated": "2025-12"
+      }
     },
     {
       "id": "moonshotai/kimi-k2-instruct-0905",
@@ -69,9 +65,7 @@
         "supportsReasoningEffort": false,
         "supportsDeveloperRole": false,
         "maxTokensField": "max_tokens"
-      },
-      "releaseDate": "2025-09-05",
-      "lastUpdated": "2025-09-05"
+      }
     },
     {
       "id": "moonshotai/kimi-k2-instruct",
@@ -93,9 +87,7 @@
         "supportsReasoningEffort": false,
         "supportsDeveloperRole": false,
         "maxTokensField": "max_tokens"
-      },
-      "releaseDate": "2025-01-01",
-      "lastUpdated": "2025-09-05"
+      }
     },
     {
       "id": "z-ai/glm-5.1",
@@ -117,9 +109,7 @@
         "supportsReasoningEffort": false,
         "supportsDeveloperRole": false,
         "maxTokensField": "max_tokens"
-      },
-      "releaseDate": "2026-03-27",
-      "lastUpdated": "2026-03-27"
+      }
     },
     {
       "id": "z-ai/glm4.7",
@@ -141,9 +131,7 @@
         "supportsReasoningEffort": false,
         "supportsDeveloperRole": false,
         "maxTokensField": "max_tokens"
-      },
-      "releaseDate": "2025-12-22",
-      "lastUpdated": "2025-12-22"
+      }
     },
     {
       "id": "deepseek-ai/deepseek-v4-flash",
@@ -165,9 +153,7 @@
         "supportsReasoningEffort": false,
         "supportsDeveloperRole": false,
         "maxTokensField": "max_tokens"
-      },
-      "releaseDate": "2026-04-24",
-      "lastUpdated": "2026-04-24"
+      }
     },
     {
       "id": "deepseek-ai/deepseek-v4-pro",
@@ -189,9 +175,7 @@
         "supportsReasoningEffort": false,
         "supportsDeveloperRole": false,
         "maxTokensField": "max_tokens"
-      },
-      "releaseDate": "2026-04-24",
-      "lastUpdated": "2026-04-24"
+      }
     },
     {
       "id": "deepseek-ai/deepseek-v3.2",
@@ -213,9 +197,7 @@
         "supportsReasoningEffort": false,
         "supportsDeveloperRole": false,
         "maxTokensField": "max_tokens"
-      },
-      "releaseDate": "2025-12-01",
-      "lastUpdated": "2025-12-01"
+      }
     },
     {
       "id": "deepseek-ai/deepseek-v3.1-terminus",
@@ -237,9 +219,7 @@
         "supportsReasoningEffort": false,
         "supportsDeveloperRole": false,
         "maxTokensField": "max_tokens"
-      },
-      "releaseDate": "2025-09-22",
-      "lastUpdated": "2025-09-22"
+      }
     },
     {
       "id": "abacusai/dracarys-llama-3_1-70b-instruct",
@@ -261,9 +241,7 @@
         "supportsReasoningEffort": false,
         "supportsDeveloperRole": false,
         "maxTokensField": "max_tokens"
-      },
-      "releaseDate": "2024-09-11",
-      "lastUpdated": "2025-05-22"
+      }
     },
     {
       "id": "baai/bge-m3",
@@ -285,9 +263,7 @@
         "supportsReasoningEffort": false,
         "supportsDeveloperRole": false,
         "maxTokensField": "max_tokens"
-      },
-      "releaseDate": "2024-01-30",
-      "lastUpdated": "2026-04-30"
+      }
     },
     {
       "id": "black-forest-labs/flux_2-klein-4b",
@@ -310,9 +286,7 @@
         "supportsReasoningEffort": false,
         "supportsDeveloperRole": false,
         "maxTokensField": "max_tokens"
-      },
-      "releaseDate": "2026-01-14",
-      "lastUpdated": "2026-01-31"
+      }
     },
     {
       "id": "black-forest-labs/flux_1-kontext-dev",
@@ -335,9 +309,7 @@
         "supportsReasoningEffort": false,
         "supportsDeveloperRole": false,
         "maxTokensField": "max_tokens"
-      },
-      "releaseDate": "2025-08-12",
-      "lastUpdated": "2025-08-12"
+      }
     },
     {
       "id": "black-forest-labs/flux_1-schnell",
@@ -359,9 +331,7 @@
         "supportsReasoningEffort": false,
         "supportsDeveloperRole": false,
         "maxTokensField": "max_tokens"
-      },
-      "releaseDate": "2024-08-01",
-      "lastUpdated": "2026-02-04"
+      }
     },
     {
       "id": "black-forest-labs/flux.1-dev",
@@ -383,9 +353,7 @@
         "supportsReasoningEffort": false,
         "supportsDeveloperRole": false,
         "maxTokensField": "max_tokens"
-      },
-      "releaseDate": "2024-08-01",
-      "lastUpdated": "2025-09-05"
+      }
     },
     {
       "id": "bytedance/seed-oss-36b-instruct",
@@ -407,9 +375,7 @@
         "supportsReasoningEffort": false,
         "supportsDeveloperRole": false,
         "maxTokensField": "max_tokens"
-      },
-      "releaseDate": "2025-09-04",
-      "lastUpdated": "2025-11-25"
+      }
     },
     {
       "id": "google/gemma-4-31b-it",
@@ -432,9 +398,7 @@
         "supportsReasoningEffort": false,
         "supportsDeveloperRole": false,
         "maxTokensField": "max_tokens"
-      },
-      "releaseDate": "2026-04-02",
-      "lastUpdated": "2026-04-02"
+      }
     },
     {
       "id": "google/gemma-3n-e2b-it",
@@ -457,9 +421,7 @@
         "supportsReasoningEffort": false,
         "supportsDeveloperRole": false,
         "maxTokensField": "max_tokens"
-      },
-      "releaseDate": "2025-06-12",
-      "lastUpdated": "2025-06-12"
+      }
     },
     {
       "id": "google/gemma-3n-e4b-it",
@@ -482,9 +444,7 @@
         "supportsReasoningEffort": false,
         "supportsDeveloperRole": false,
         "maxTokensField": "max_tokens"
-      },
-      "releaseDate": "2025-06-03",
-      "lastUpdated": "2025-06-03"
+      }
     },
     {
       "id": "google/gemma-3-27b-it",
@@ -507,9 +467,7 @@
         "supportsReasoningEffort": false,
         "supportsDeveloperRole": false,
         "maxTokensField": "max_tokens"
-      },
-      "releaseDate": "2024-12-01",
-      "lastUpdated": "2025-09-05"
+      }
     },
     {
       "id": "google/gemma-2-2b-it",
@@ -531,9 +489,7 @@
         "supportsReasoningEffort": false,
         "supportsDeveloperRole": false,
         "maxTokensField": "max_tokens"
-      },
-      "releaseDate": "2024-07-16",
-      "lastUpdated": "2024-07-16"
+      }
     },
     {
       "id": "meta/llama-4-maverick-17b-128e-instruct",
@@ -556,9 +512,7 @@
         "supportsReasoningEffort": false,
         "supportsDeveloperRole": false,
         "maxTokensField": "max_tokens"
-      },
-      "releaseDate": "2025-04-01",
-      "lastUpdated": "2025-04-01"
+      }
     },
     {
       "id": "meta/llama-3.1-8b-instruct",
@@ -580,9 +534,7 @@
         "supportsReasoningEffort": false,
         "supportsDeveloperRole": false,
         "maxTokensField": "max_tokens"
-      },
-      "releaseDate": "2025-01-01",
-      "lastUpdated": "2025-01-01"
+      }
     },
     {
       "id": "meta/llama-3.3-70b-instruct",
@@ -604,9 +556,7 @@
         "supportsReasoningEffort": false,
         "supportsDeveloperRole": false,
         "maxTokensField": "max_tokens"
-      },
-      "releaseDate": "2024-11-26",
-      "lastUpdated": "2024-11-26"
+      }
     },
     {
       "id": "meta/llama-3.2-90b-vision-instruct",
@@ -629,9 +579,7 @@
         "supportsReasoningEffort": false,
         "supportsDeveloperRole": false,
         "maxTokensField": "max_tokens"
-      },
-      "releaseDate": "2024-09-25",
-      "lastUpdated": "2024-09-25"
+      }
     },
     {
       "id": "meta/llama-3.2-11b-vision-instruct",
@@ -654,9 +602,7 @@
         "supportsReasoningEffort": false,
         "supportsDeveloperRole": false,
         "maxTokensField": "max_tokens"
-      },
-      "releaseDate": "2024-09-18",
-      "lastUpdated": "2024-09-18"
+      }
     },
     {
       "id": "meta/llama-3.2-1b-instruct",
@@ -678,9 +624,7 @@
         "supportsReasoningEffort": false,
         "supportsDeveloperRole": false,
         "maxTokensField": "max_tokens"
-      },
-      "releaseDate": "2024-09-18",
-      "lastUpdated": "2024-09-18"
+      }
     },
     {
       "id": "meta/llama-3.2-3b-instruct",
@@ -702,13 +646,11 @@
         "supportsReasoningEffort": false,
         "supportsDeveloperRole": false,
         "maxTokensField": "max_tokens"
-      },
-      "releaseDate": "2024-09-18",
-      "lastUpdated": "2024-09-18"
+      }
     },
     {
       "id": "meta/esm2-650m",
-      "name": "esm2-650m",
+      "name": "Esm2 650m",
       "company": "meta",
       "reasoning": false,
       "input": [
@@ -726,9 +668,7 @@
         "supportsReasoningEffort": false,
         "supportsDeveloperRole": false,
         "maxTokensField": "max_tokens"
-      },
-      "releaseDate": "2024-08-29",
-      "lastUpdated": "2025-03-10"
+      }
     },
     {
       "id": "meta/llama-3.1-70b-instruct",
@@ -750,13 +690,11 @@
         "supportsReasoningEffort": false,
         "supportsDeveloperRole": false,
         "maxTokensField": "max_tokens"
-      },
-      "releaseDate": "2024-07-16",
-      "lastUpdated": "2024-07-16"
+      }
     },
     {
       "id": "meta/esmfold",
-      "name": "esmfold",
+      "name": "Esmfold",
       "company": "meta",
       "reasoning": false,
       "input": [
@@ -774,9 +712,7 @@
         "supportsReasoningEffort": false,
         "supportsDeveloperRole": false,
         "maxTokensField": "max_tokens"
-      },
-      "releaseDate": "2024-03-15",
-      "lastUpdated": "2025-06-12"
+      }
     },
     {
       "id": "microsoft/phi-4-multimodal-instruct",
@@ -798,9 +734,7 @@
         "supportsReasoningEffort": false,
         "supportsDeveloperRole": false,
         "maxTokensField": "max_tokens"
-      },
-      "releaseDate": "2025-07-26",
-      "lastUpdated": "2025-07-26"
+      }
     },
     {
       "id": "microsoft/phi-4-mini-instruct",
@@ -823,9 +757,7 @@
         "supportsReasoningEffort": false,
         "supportsDeveloperRole": false,
         "maxTokensField": "max_tokens"
-      },
-      "releaseDate": "2024-12-01",
-      "lastUpdated": "2025-09-05"
+      }
     },
     {
       "id": "minimaxai/minimax-m2.7",
@@ -847,9 +779,7 @@
         "supportsReasoningEffort": false,
         "supportsDeveloperRole": false,
         "maxTokensField": "max_tokens"
-      },
-      "releaseDate": "2026-03-18",
-      "lastUpdated": "2026-04-11"
+      }
     },
     {
       "id": "minimaxai/minimax-m2.5",
@@ -871,13 +801,11 @@
         "supportsReasoningEffort": false,
         "supportsDeveloperRole": false,
         "maxTokensField": "max_tokens"
-      },
-      "releaseDate": "2026-02-12",
-      "lastUpdated": "2026-02-12"
+      }
     },
     {
       "id": "mistralai/mistral-small-4-119b-2603",
-      "name": "mistral-small-4-119b-2603",
+      "name": "Mistral Small 4 119b 2603",
       "company": "mistralai",
       "reasoning": false,
       "input": [
@@ -898,9 +826,7 @@
         "requiresToolResultName": true,
         "requiresThinkingAsText": true,
         "requiresMistralToolIds": true
-      },
-      "releaseDate": "2026-03-16",
-      "lastUpdated": "2026-03-16"
+      }
     },
     {
       "id": "mistralai/devstral-2-123b-instruct-2512",
@@ -925,9 +851,7 @@
         "requiresToolResultName": true,
         "requiresThinkingAsText": true,
         "requiresMistralToolIds": true
-      },
-      "releaseDate": "2025-12-08",
-      "lastUpdated": "2025-12-09"
+      }
     },
     {
       "id": "mistralai/mistral-large-3-675b-instruct-2512",
@@ -953,9 +877,7 @@
         "requiresToolResultName": true,
         "requiresThinkingAsText": true,
         "requiresMistralToolIds": true
-      },
-      "releaseDate": "2025-12-02",
-      "lastUpdated": "2025-12-02"
+      }
     },
     {
       "id": "mistralai/magistral-small-2506",
@@ -980,9 +902,7 @@
         "requiresToolResultName": true,
         "requiresThinkingAsText": true,
         "requiresMistralToolIds": true
-      },
-      "releaseDate": "2025-09-25",
-      "lastUpdated": "2025-09-25"
+      }
     },
     {
       "id": "mistralai/mistral-medium-3-instruct",
@@ -1008,13 +928,11 @@
         "requiresToolResultName": true,
         "requiresThinkingAsText": true,
         "requiresMistralToolIds": true
-      },
-      "releaseDate": "2025-09-25",
-      "lastUpdated": "2025-09-25"
+      }
     },
     {
       "id": "mistralai/mistral-nemotron",
-      "name": "mistral-nemotron",
+      "name": "Mistral Nemotron",
       "company": "mistralai",
       "reasoning": false,
       "input": [
@@ -1035,9 +953,7 @@
         "requiresToolResultName": true,
         "requiresThinkingAsText": true,
         "requiresMistralToolIds": true
-      },
-      "releaseDate": "2025-06-11",
-      "lastUpdated": "2025-06-12"
+      }
     },
     {
       "id": "mistralai/mistral-7b-instruct-v03",
@@ -1062,13 +978,11 @@
         "requiresToolResultName": true,
         "requiresThinkingAsText": true,
         "requiresMistralToolIds": true
-      },
-      "releaseDate": "2025-04-01",
-      "lastUpdated": "2025-04-01"
+      }
     },
     {
       "id": "mistralai/mixtral-8x22b-instruct",
-      "name": "Mistral: Mixtral 8x22B Instruct",
+      "name": "Mixtral 8x22B Instruct",
       "company": "mistralai",
       "reasoning": false,
       "input": [
@@ -1089,13 +1003,11 @@
         "requiresToolResultName": true,
         "requiresThinkingAsText": true,
         "requiresMistralToolIds": true
-      },
-      "releaseDate": "2024-04-17",
-      "lastUpdated": "2024-04-17"
+      }
     },
     {
       "id": "mistralai/mixtral-8x7b-instruct",
-      "name": "Mistral: Mixtral 8x7B Instruct",
+      "name": "Mixtral 8x7B Instruct",
       "company": "mistralai",
       "reasoning": false,
       "input": [
@@ -1116,9 +1028,7 @@
         "requiresToolResultName": true,
         "requiresThinkingAsText": true,
         "requiresMistralToolIds": true
-      },
-      "releaseDate": "2023-12-10",
-      "lastUpdated": "2026-03-15"
+      }
     },
     {
       "id": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning",
@@ -1141,61 +1051,11 @@
         "supportsReasoningEffort": false,
         "supportsDeveloperRole": false,
         "maxTokensField": "max_tokens"
-      },
-      "releaseDate": "2026-04-28",
-      "lastUpdated": "2026-04-28"
-    },
-    {
-      "id": "nvidia/active-speaker-detection",
-      "name": "Active Speaker Detection",
-      "company": "nvidia",
-      "reasoning": false,
-      "input": [
-        "text"
-      ],
-      "contextWindow": 128000,
-      "maxTokens": 4096,
-      "cost": {
-        "input": 0,
-        "output": 0,
-        "cacheRead": 0,
-        "cacheWrite": 0
-      },
-      "compat": {
-        "supportsReasoningEffort": false,
-        "supportsDeveloperRole": false,
-        "maxTokensField": "max_tokens"
-      },
-      "releaseDate": "2026-04-16",
-      "lastUpdated": "2026-04-16"
-    },
-    {
-      "id": "nvidia/synthetic-video-detector",
-      "name": "synthetic-video-detector",
-      "company": "nvidia",
-      "reasoning": false,
-      "input": [
-        "text"
-      ],
-      "contextWindow": 128000,
-      "maxTokens": 4096,
-      "cost": {
-        "input": 0,
-        "output": 0,
-        "cacheRead": 0,
-        "cacheWrite": 0
-      },
-      "compat": {
-        "supportsReasoningEffort": false,
-        "supportsDeveloperRole": false,
-        "maxTokensField": "max_tokens"
-      },
-      "releaseDate": "2026-04-16",
-      "lastUpdated": "2026-04-16"
+      }
     },
     {
       "id": "nvidia/llama-nemotron-rerank-vl-1b-v2",
-      "name": "llama-nemotron-rerank-vl-1b-v2",
+      "name": "Llama Nemotron Rerank Vl 1b V2",
       "company": "nvidia",
       "reasoning": false,
       "input": [
@@ -1214,13 +1074,11 @@
         "supportsReasoningEffort": false,
         "supportsDeveloperRole": false,
         "maxTokensField": "max_tokens"
-      },
-      "releaseDate": "2026-03-31",
-      "lastUpdated": "2026-03-31"
+      }
     },
     {
       "id": "nvidia/nemotron-voicechat",
-      "name": "nemotron-voicechat",
+      "name": "Nemotron Voicechat",
       "company": "nvidia",
       "reasoning": false,
       "input": [
@@ -1238,9 +1096,7 @@
         "supportsReasoningEffort": false,
         "supportsDeveloperRole": false,
         "maxTokensField": "max_tokens"
-      },
-      "releaseDate": "2026-03-16",
-      "lastUpdated": "2026-03-16"
+      }
     },
     {
       "id": "nvidia/nemotron-3-super-120b-a12b",
@@ -1262,13 +1118,11 @@
         "supportsReasoningEffort": false,
         "supportsDeveloperRole": false,
         "maxTokensField": "max_tokens"
-      },
-      "releaseDate": "2026-03-11",
-      "lastUpdated": "2026-03-11"
+      }
     },
     {
       "id": "nvidia/gliner-pii",
-      "name": "gliner-pii",
+      "name": "Gliner Pii",
       "company": "nvidia",
       "reasoning": false,
       "input": [
@@ -1286,9 +1140,7 @@
         "supportsReasoningEffort": false,
         "supportsDeveloperRole": false,
         "maxTokensField": "max_tokens"
-      },
-      "releaseDate": "2026-03-03",
-      "lastUpdated": "2026-03-03"
+      }
     },
     {
       "id": "nvidia/cosmos-transfer2_5-2b",
@@ -1311,37 +1163,11 @@
         "supportsReasoningEffort": false,
         "supportsDeveloperRole": false,
         "maxTokensField": "max_tokens"
-      },
-      "releaseDate": "2026-02-26",
-      "lastUpdated": "2026-02-26"
-    },
-    {
-      "id": "nvidia/usdcode",
-      "name": "usdcode",
-      "company": "nvidia",
-      "reasoning": false,
-      "input": [
-        "text"
-      ],
-      "contextWindow": 128000,
-      "maxTokens": 4096,
-      "cost": {
-        "input": 0,
-        "output": 0,
-        "cacheRead": 0,
-        "cacheWrite": 0
-      },
-      "compat": {
-        "supportsReasoningEffort": false,
-        "supportsDeveloperRole": false,
-        "maxTokensField": "max_tokens"
-      },
-      "releaseDate": "2026-01-01",
-      "lastUpdated": "2026-01-01"
+      }
     },
     {
       "id": "nvidia/nvidia-nemotron-nano-9b-v2",
-      "name": "nvidia-nemotron-nano-9b-v2",
+      "name": "Nvidia Nemotron Nano 9b V2",
       "company": "nvidia",
       "reasoning": true,
       "input": [
@@ -1359,9 +1185,7 @@
         "supportsReasoningEffort": false,
         "supportsDeveloperRole": false,
         "maxTokensField": "max_tokens"
-      },
-      "releaseDate": "2025-08-18",
-      "lastUpdated": "2025-08-18"
+      }
     },
     {
       "id": "nvidia/llama-3_3-nemotron-super-49b-v1_5",
@@ -1383,13 +1207,11 @@
         "supportsReasoningEffort": false,
         "supportsDeveloperRole": false,
         "maxTokensField": "max_tokens"
-      },
-      "releaseDate": "2025-07-25",
-      "lastUpdated": "2025-07-25"
+      }
     },
     {
       "id": "nvidia/cosmos-transfer1-7b",
-      "name": "cosmos-transfer1-7b",
+      "name": "Cosmos Transfer1 7b",
       "company": "nvidia",
       "reasoning": false,
       "input": [
@@ -1408,13 +1230,11 @@
         "supportsReasoningEffort": false,
         "supportsDeveloperRole": false,
         "maxTokensField": "max_tokens"
-      },
-      "releaseDate": "2025-06-13",
-      "lastUpdated": "2025-06-30"
+      }
     },
     {
       "id": "nvidia/magpie-tts-zeroshot",
-      "name": "magpie-tts-zeroshot",
+      "name": "Magpie Tts Zeroshot",
       "company": "nvidia",
       "reasoning": false,
       "input": [
@@ -1432,9 +1252,7 @@
         "supportsReasoningEffort": false,
         "supportsDeveloperRole": false,
         "maxTokensField": "max_tokens"
-      },
-      "releaseDate": "2025-05-22",
-      "lastUpdated": "2025-06-12"
+      }
     },
     {
       "id": "nvidia/llama-3_3-nemotron-super-49b-v1",
@@ -1456,37 +1274,11 @@
         "supportsReasoningEffort": false,
         "supportsDeveloperRole": false,
         "maxTokensField": "max_tokens"
-      },
-      "releaseDate": "2025-04-07",
-      "lastUpdated": "2025-04-07"
-    },
-    {
-      "id": "nvidia/bevformer",
-      "name": "bevformer",
-      "company": "nvidia",
-      "reasoning": false,
-      "input": [
-        "text"
-      ],
-      "contextWindow": 128000,
-      "maxTokens": 8192,
-      "cost": {
-        "input": 0,
-        "output": 0,
-        "cacheRead": 0,
-        "cacheWrite": 0
-      },
-      "compat": {
-        "supportsReasoningEffort": false,
-        "supportsDeveloperRole": false,
-        "maxTokensField": "max_tokens"
-      },
-      "releaseDate": "2025-03-18",
-      "lastUpdated": "2025-07-20"
+      }
     },
     {
       "id": "nvidia/cosmos-predict1-5b",
-      "name": "cosmos-predict1-5b",
+      "name": "Cosmos Predict1 5b",
       "company": "nvidia",
       "reasoning": false,
       "input": [
@@ -1505,37 +1297,11 @@
         "supportsReasoningEffort": false,
         "supportsDeveloperRole": false,
         "maxTokensField": "max_tokens"
-      },
-      "releaseDate": "2025-03-18",
-      "lastUpdated": "2025-03-18"
-    },
-    {
-      "id": "nvidia/sparsedrive",
-      "name": "sparsedrive",
-      "company": "nvidia",
-      "reasoning": false,
-      "input": [
-        "text"
-      ],
-      "contextWindow": 128000,
-      "maxTokens": 8192,
-      "cost": {
-        "input": 0,
-        "output": 0,
-        "cacheRead": 0,
-        "cacheWrite": 0
-      },
-      "compat": {
-        "supportsReasoningEffort": false,
-        "supportsDeveloperRole": false,
-        "maxTokensField": "max_tokens"
-      },
-      "releaseDate": "2025-03-18",
-      "lastUpdated": "2025-07-20"
+      }
     },
     {
       "id": "nvidia/nemotron-3-nano-30b-a3b",
-      "name": "nemotron-3-nano-30b-a3b",
+      "name": "Nemotron 3 Nano 30b A3b",
       "company": "nvidia",
       "reasoning": true,
       "input": [
@@ -1553,37 +1319,11 @@
         "supportsReasoningEffort": false,
         "supportsDeveloperRole": false,
         "maxTokensField": "max_tokens"
-      },
-      "releaseDate": "2024-12",
-      "lastUpdated": "2024-12"
-    },
-    {
-      "id": "nvidia/studiovoice",
-      "name": "studiovoice",
-      "company": "nvidia",
-      "reasoning": false,
-      "input": [
-        "text"
-      ],
-      "contextWindow": 128000,
-      "maxTokens": 8192,
-      "cost": {
-        "input": 0,
-        "output": 0,
-        "cacheRead": 0,
-        "cacheWrite": 0
-      },
-      "compat": {
-        "supportsReasoningEffort": false,
-        "supportsDeveloperRole": false,
-        "maxTokensField": "max_tokens"
-      },
-      "releaseDate": "2024-10-03",
-      "lastUpdated": "2025-06-13"
+      }
     },
     {
       "id": "nvidia/nemotron-mini-4b-instruct",
-      "name": "nemotron-mini-4b-instruct",
+      "name": "Nemotron Mini 4b Instruct",
       "company": "nvidia",
       "reasoning": false,
       "input": [
@@ -1601,37 +1341,11 @@
         "supportsReasoningEffort": false,
         "supportsDeveloperRole": false,
         "maxTokensField": "max_tokens"
-      },
-      "releaseDate": "2024-08-21",
-      "lastUpdated": "2024-08-26"
-    },
-    {
-      "id": "nvidia/usdvalidate",
-      "name": "usdvalidate",
-      "company": "nvidia",
-      "reasoning": false,
-      "input": [
-        "text"
-      ],
-      "contextWindow": 128000,
-      "maxTokens": 4096,
-      "cost": {
-        "input": 0,
-        "output": 0,
-        "cacheRead": 0,
-        "cacheWrite": 0
-      },
-      "compat": {
-        "supportsReasoningEffort": false,
-        "supportsDeveloperRole": false,
-        "maxTokensField": "max_tokens"
-      },
-      "releaseDate": "2024-07-24",
-      "lastUpdated": "2025-01-08"
+      }
     },
     {
       "id": "nvidia/rerank-qa-mistral-4b",
-      "name": "rerank-qa-mistral-4b",
+      "name": "Rerank Qa Mistral 4b",
       "company": "nvidia",
       "reasoning": false,
       "input": [
@@ -1649,9 +1363,7 @@
         "supportsReasoningEffort": false,
         "supportsDeveloperRole": false,
         "maxTokensField": "max_tokens"
-      },
-      "releaseDate": "2024-03-17",
-      "lastUpdated": "2025-01-17"
+      }
     },
     {
       "id": "openai/gpt-oss-20b",
@@ -1673,9 +1385,7 @@
         "supportsReasoningEffort": false,
         "supportsDeveloperRole": false,
         "maxTokensField": "max_tokens"
-      },
-      "releaseDate": "2025-08-05",
-      "lastUpdated": "2025-08-05"
+      }
     },
     {
       "id": "openai/gpt-oss-120b",
@@ -1697,9 +1407,7 @@
         "supportsReasoningEffort": false,
         "supportsDeveloperRole": false,
         "maxTokensField": "max_tokens"
-      },
-      "releaseDate": "2025-08-04",
-      "lastUpdated": "2025-08-14"
+      }
     },
     {
       "id": "openai/whisper-large-v3",
@@ -1721,9 +1429,7 @@
         "supportsReasoningEffort": false,
         "supportsDeveloperRole": false,
         "maxTokensField": "max_tokens"
-      },
-      "releaseDate": "2023-09-01",
-      "lastUpdated": "2025-09-05"
+      }
     },
     {
       "id": "qwen/qwen3.5-122b-a10b",
@@ -1746,9 +1452,7 @@
         "supportsReasoningEffort": false,
         "supportsDeveloperRole": false,
         "maxTokensField": "max_tokens"
-      },
-      "releaseDate": "2026-02-23",
-      "lastUpdated": "2026-02-23"
+      }
     },
     {
       "id": "qwen/qwen3.5-397b-a17b",
@@ -1771,9 +1475,7 @@
         "supportsReasoningEffort": false,
         "supportsDeveloperRole": false,
         "maxTokensField": "max_tokens"
-      },
-      "releaseDate": "2026-02-16",
-      "lastUpdated": "2026-02-16"
+      }
     },
     {
       "id": "qwen/qwen-image-edit",
@@ -1796,9 +1498,7 @@
         "supportsReasoningEffort": false,
         "supportsDeveloperRole": false,
         "maxTokensField": "max_tokens"
-      },
-      "releaseDate": "2025-08-19",
-      "lastUpdated": "2025-08-19"
+      }
     },
     {
       "id": "qwen/qwen-image",
@@ -1821,9 +1521,7 @@
         "supportsReasoningEffort": false,
         "supportsDeveloperRole": false,
         "maxTokensField": "max_tokens"
-      },
-      "releaseDate": "2025-08-07",
-      "lastUpdated": "2025-08-07"
+      }
     },
     {
       "id": "qwen/qwen3-coder-480b-a35b-instruct",
@@ -1845,9 +1543,7 @@
         "supportsReasoningEffort": false,
         "supportsDeveloperRole": false,
         "maxTokensField": "max_tokens"
-      },
-      "releaseDate": "2025-07-23",
-      "lastUpdated": "2025-07-23"
+      }
     },
     {
       "id": "qwen/qwen3-next-80b-a3b-instruct",
@@ -1869,9 +1565,7 @@
         "supportsReasoningEffort": false,
         "supportsDeveloperRole": false,
         "maxTokensField": "max_tokens"
-      },
-      "releaseDate": "2024-12-01",
-      "lastUpdated": "2025-09-05"
+      }
     },
     {
       "id": "qwen/qwen3-next-80b-a3b-thinking",
@@ -1893,9 +1587,7 @@
         "supportsReasoningEffort": false,
         "supportsDeveloperRole": false,
         "maxTokensField": "max_tokens"
-      },
-      "releaseDate": "2024-12-01",
-      "lastUpdated": "2025-09-05"
+      }
     },
     {
       "id": "qwen/qwen2.5-coder-32b-instruct",
@@ -1917,13 +1609,11 @@
         "supportsReasoningEffort": false,
         "supportsDeveloperRole": false,
         "maxTokensField": "max_tokens"
-      },
-      "releaseDate": "2024-11-06",
-      "lastUpdated": "2024-11-06"
+      }
     },
     {
       "id": "sarvamai/sarvam-m",
-      "name": "sarvam-m",
+      "name": "Sarvam M",
       "company": "sarvamai",
       "reasoning": false,
       "input": [
@@ -1941,9 +1631,7 @@
         "supportsReasoningEffort": false,
         "supportsDeveloperRole": false,
         "maxTokensField": "max_tokens"
-      },
-      "releaseDate": "2025-07-25",
-      "lastUpdated": "2025-07-25"
+      }
     },
     {
       "id": "stepfun-ai/step-3.7-flash",
@@ -1966,9 +1654,7 @@
         "supportsReasoningEffort": false,
         "supportsDeveloperRole": false,
         "maxTokensField": "max_tokens"
-      },
-      "releaseDate": "2026-05-28",
-      "lastUpdated": "2026-05-28"
+      }
     },
     {
       "id": "stepfun-ai/step-3.5-flash",
@@ -1990,9 +1676,7 @@
         "supportsReasoningEffort": false,
         "supportsDeveloperRole": false,
         "maxTokensField": "max_tokens"
-      },
-      "releaseDate": "2026-02-02",
-      "lastUpdated": "2026-02-02"
+      }
     },
     {
       "id": "upstage/solar-10_7b-instruct",
@@ -2014,9 +1698,7 @@
         "supportsReasoningEffort": false,
         "supportsDeveloperRole": false,
         "maxTokensField": "max_tokens"
-      },
-      "releaseDate": "2024-06-05",
-      "lastUpdated": "2025-04-10"
+      }
     }
   ],
   "thinkingConfigs": {
