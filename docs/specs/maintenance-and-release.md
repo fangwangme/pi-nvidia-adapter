@@ -90,46 +90,18 @@ After merging the PR into the `main` branch, the release process is finalized by
 
 ---
 
-## 4. Automated Change Log Extraction
+## 4. Manual Change Log & Versioning Policy
 
-We avoid writing release notes manually. To keep development efficient, we use automated Change Log extraction strategies during发版:
+To keep the development pipeline simple and predictable, this project uses a manual versioning and change log process. We do not use complex CI/CD automation.
 
-### Method A: GitHub CLI Automation (Recommended)
-You can create a GitHub Release and automatically extract the Change Log using the GitHub CLI's `--generate-notes` flag. This parses all squash-merged PRs and commit messages since the previous tag:
-```bash
-# Finalizes the release and auto-generates changelogs directly into GitHub Release
-gh release create vX.Y.Z --title "Release vX.Y.Z" --generate-notes
-```
+### PR Requirements
+Before any Pull Request (PR) is created or merged, the developer must:
+1. **Bump Version**: Manually increment the version field in `package.json` according to SemVer (Semantic Versioning).
+2. **Update Changelog**: Manually document all new changes, additions, or deprecations under the root directory's `CHANGELOG.md` file.
 
-### Method B: GitHub Actions Automation (CI/CD Pipeline)
-You can automate the release pipeline entirely via a GitHub Actions workflow (e.g., `.github/workflows/release.yml`). When a tag prefixing `v` is pushed, the workflow runs the build and uploads a release with auto-extracted release notes:
-```yaml
-name: Draft Release
-on:
-  push:
-    tags:
-      - 'v*'
+### Manual Release Workflow
+Once the PR is merged into `main`, the project maintainer handles release notes manually on GitHub:
+1. Pull the latest `main` branch locally, apply the git tag matching the package version, and push the tag.
+2. Go to the GitHub repository UI ➔ Releases ➔ Draft a new release.
+3. Select the created tag (e.g. `vX.Y.Z`), title the release (e.g. `Release vX.Y.Z`), and copy/paste the corresponding change notes directly from `CHANGELOG.md` into the release description.
 
-jobs:
-  release:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - name: Create GitHub Release
-        uses: softprops/action-gh-release@v2
-        with:
-          tag_name: ${{ github.ref_name }}
-          name: Release ${{ github.ref_name }}
-          generate_release_notes: true  # <--- Automatically extracts and generates Change Log
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-```
-
-### Method C: Local Conventional Commits Changelog (Optional)
-If a local `CHANGELOG.md` document is desired, developers can integrate tools like `conventional-changelog-cli` or `standard-version` to extract git messages based on [Conventional Commits](https://www.conventionalcommits.org/):
-```bash
-# Dry run to preview changelog diff
-bunx standard-version --dry-run
-# Executes standard-version (bumps, updates CHANGELOG.md, and creates tag locally)
-bunx standard-version
-```
