@@ -22,7 +22,7 @@ It dynamically maps, groups, and registers 100+ frontier models available on the
 Clone the repository and install it into your local Pi Agent instance:
 ```bash
 # Clone the repository
-git clone git@github.com:xRyul/pi-nvidia-adapter.git
+git clone git@github.com:fangwangme/pi-nvidia-adapter.git
 
 # Load the extension in Pi
 pi -e ./path/to/pi-nvidia-adapter
@@ -31,7 +31,7 @@ pi -e ./path/to/pi-nvidia-adapter
 ### Method 2: Package Installation
 Install the extension directly via GitHub URL:
 ```bash
-pi install git:github.com/xRyul/pi-nvidia-adapter
+pi install git:github.com/fangwangme/pi-nvidia-adapter
 ```
 
 ---
