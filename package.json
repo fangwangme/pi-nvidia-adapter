@@ -1,6 +1,6 @@
 {
   "name": "pi-nvidia-adapter",
-  "version": "1.2.0",
+  "version": "0.0.1",
   "description": "NVIDIA API provider adapter for pi coding agent — dynamically auto-discover models via models.dev",
   "type": "module",
   "files": [
