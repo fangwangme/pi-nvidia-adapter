@@ -1,4 +1,4 @@
-import { existsSync, writeFileSync, mkdirSync } from "node:fs";
+import { existsSync, writeFileSync, mkdirSync, readFileSync } from "node:fs";
 import { fileURLToPath } from "node:url";
 import { dirname, join } from "node:path";
 import { shouldSkipModel, makeDisplayName, type NimModelEntry } from "../src/shared";
@@ -275,6 +275,72 @@ async function main() {
     models: outputModels,
     thinkingConfigs: thinkingConfigs,
   };
+
+  // Compute diff against existing file before overwriting
+  let oldModels: NimModelEntry[] = [];
+  if (existsSync(OUTPUT_FILE)) {
+    try {
+      const oldData = JSON.parse(readFileSync(OUTPUT_FILE, "utf-8"));
+      if (oldData && Array.isArray(oldData.models)) {
+        oldModels = oldData.models;
+      }
+    } catch (e) {
+      console.warn("⚠️ Could not read or parse existing models.json. Skipping diff calculation.");
+    }
+  }
+
+  const added = outputModels.filter(n => !oldModels.some(o => o.id === n.id));
+  const removed = oldModels.filter(o => !outputModels.some(n => n.id === o.id));
+  const changed: { id: string; name: string; changes: string[] }[] = [];
+
+  for (const newM of outputModels) {
+    const oldM = oldModels.find(o => o.id === newM.id);
+    if (oldM) {
+      const changes: string[] = [];
+      if (oldM.name !== newM.name) {
+        changes.push(`name: "${oldM.name}" -> "${newM.name}"`);
+      }
+      if (oldM.contextWindow !== newM.contextWindow) {
+        changes.push(`contextWindow: ${oldM.contextWindow} -> ${newM.contextWindow}`);
+      }
+      if (oldM.maxTokens !== newM.maxTokens) {
+        changes.push(`maxTokens: ${oldM.maxTokens} -> ${newM.maxTokens}`);
+      }
+      if (oldM.reasoning !== newM.reasoning) {
+        changes.push(`reasoning: ${oldM.reasoning} -> ${newM.reasoning}`);
+      }
+      if (JSON.stringify(oldM.input) !== JSON.stringify(newM.input)) {
+        changes.push(`input: [${oldM.input.join(", ")}] -> [${newM.input.join(", ")}]`);
+      }
+      if (changes.length > 0) {
+        changed.push({ id: newM.id, name: newM.name, changes });
+      }
+    }
+  }
+
+  if (added.length > 0 || removed.length > 0 || changed.length > 0) {
+    console.log("\n📊 Model Directory Changes Detected:");
+    if (added.length > 0) {
+      console.log(`  ➕ Added ${added.length} models:`);
+      for (const m of added) {
+        console.log(`    - \`${m.id}\` (${m.name})`);
+      }
+    }
+    if (changed.length > 0) {
+      console.log(`  🔄 Updated ${changed.length} models:`);
+      for (const c of changed) {
+        console.log(`    - \`${c.id}\` (${c.name}): ${c.changes.join(", ")}`);
+      }
+    }
+    if (removed.length > 0) {
+      console.log(`  ➖ Removed ${removed.length} models:`);
+      for (const m of removed) {
+        console.log(`    - \`${m.id}\` (${m.name})`);
+      }
+    }
+  } else {
+    console.log("\nℹ️ No model metadata changes detected.");
+  }
 
   // 4. Write config JSON directly (overwrite)
   if (!existsSync(OUTPUT_DIR)) {
