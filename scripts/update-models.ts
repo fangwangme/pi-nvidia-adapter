@@ -1,7 +1,7 @@
-import { existsSync, writeFileSync, mkdirSync, readFileSync } from "node:fs";
+import { existsSync, writeFileSync, mkdirSync, readFileSync, readdirSync, unlinkSync } from "node:fs";
 import { fileURLToPath } from "node:url";
 import { dirname, join } from "node:path";
-import { shouldSkipModel, makeDisplayName, type NimModelEntry } from "../src/shared";
+import { shouldSkipModel, makeDisplayName, type NimModelEntry, type ThinkingConfig } from "../src/shared";
 
 // =============================================================================
 // Configurations & URLs
@@ -40,12 +40,6 @@ interface ModelsDevProvider {
 // =============================================================================
 // Thinking config generator
 // =============================================================================
-interface ThinkingConfig {
-  enableKwargs: Record<string, any>;
-  disableKwargs?: Record<string, any>;
-  sendReasoningEffort?: boolean;
-  includeReasoningEffortInKwargs?: boolean;
-}
 
 function getThinkingConfig(modelId: string): ThinkingConfig | undefined {
   const id = modelId.toLowerCase();
@@ -114,6 +108,71 @@ function getThinkingConfig(modelId: string): ThinkingConfig | undefined {
   };
 }
 
+const LOCAL_DATA_DIR = join(__dirname, "../.local/data");
+const PACKAGE_JSON_FILE = join(__dirname, "../package.json");
+
+function getPackageVersion(): string {
+  try {
+    const pkg = JSON.parse(readFileSync(PACKAGE_JSON_FILE, "utf-8"));
+    if (pkg && typeof pkg.version === "string") {
+      return pkg.version;
+    }
+  } catch (e) {
+    console.warn("⚠️ Could not read version from package.json, defaulting to 0.0.1");
+  }
+  return "0.0.1";
+}
+
+function semverCompare(a: string, b: string): number {
+  const pa = a.split(".").map(Number);
+  const pb = b.split(".").map(Number);
+  for (let i = 0; i < 3; i++) {
+    const na = pa[i] || 0;
+    const nb = pb[i] || 0;
+    if (na !== nb) return na - nb;
+  }
+  return 0;
+}
+
+function getPreviousVersionModels(currentVersion: string): NimModelEntry[] | null {
+  if (!existsSync(LOCAL_DATA_DIR)) return null;
+  try {
+    const files = readdirSync(LOCAL_DATA_DIR)
+      .filter(f => f.startsWith("models_") && f.endsWith(".json"))
+      .map(f => {
+        const match = f.match(/^models_(.+)\.json$/);
+        return match ? { file: f, version: match[1] } : null;
+      })
+      .filter((item): item is { file: string; version: string } => !!item);
+    
+    // Filter for versions strictly less than currentVersion
+    const olderItems = files.filter(item => semverCompare(item.version, currentVersion) < 0);
+    
+    if (olderItems.length > 0) {
+      olderItems.sort((a, b) => semverCompare(a.version, b.version));
+      const previousItem = olderItems[olderItems.length - 1];
+      console.log(`📊 Comparing changes against previous version models (${previousItem.version})...`);
+      const content = readFileSync(join(LOCAL_DATA_DIR, previousItem.file), "utf-8");
+      return JSON.parse(content) as NimModelEntry[];
+    }
+  } catch (e) {
+    console.warn("⚠️ Could not read or parse previous version models file:", e);
+  }
+  return null;
+}
+
+function saveToLocalData(models: NimModelEntry[], currentVersion: string) {
+  if (!existsSync(LOCAL_DATA_DIR)) {
+    mkdirSync(LOCAL_DATA_DIR, { recursive: true });
+  }
+  
+  const filename = `models_${currentVersion}.json`;
+  const filePath = join(LOCAL_DATA_DIR, filename);
+  
+  writeFileSync(filePath, JSON.stringify(models, null, 2), "utf-8");
+  console.log(`💾 Saved version copy to local data: ${filePath}`);
+}
+
 // =============================================================================
 // Main Execution
 // =============================================================================
@@ -141,7 +200,6 @@ async function main() {
 
   // 2. Parse & merge metadata
   const mergedModels: NimModelEntry[] = [];
-  const thinkingConfigs: Record<string, ThinkingConfig> = {};
 
   for (const id of targetModelIds) {
     if (shouldSkipModel(id)) continue;
@@ -218,14 +276,14 @@ async function main() {
       lastUpdated: devMeta?.last_updated,
     };
 
-    mergedModels.push(entry);
-
     if (reasoning) {
       const config = getThinkingConfig(id);
       if (config) {
-        thinkingConfigs[id] = config;
+        entry.thinkingConfig = config;
       }
     }
+
+    mergedModels.push(entry);
   }
 
   // 3. Group by Company and Rank
@@ -268,22 +326,25 @@ async function main() {
     sortedFinalModels.push(...list);
   }
 
-  // Strip temporary helper fields
-  const outputModels = sortedFinalModels.map(({ releaseDate, lastUpdated, ...rest }) => rest);
+  const outputModels = sortedFinalModels;
+  const jsonOutput = outputModels;
 
-  const jsonOutput = {
-    models: outputModels,
-    thinkingConfigs: thinkingConfigs,
-  };
-
-  // Compute diff against existing file before overwriting
+  // Compute diff against either the latest local version or the existing src/generated/models.json
+  // Compute diff against either the previous version's saved JSON or the existing src/generated/models.json
   let oldModels: NimModelEntry[] = [];
-  if (existsSync(OUTPUT_FILE)) {
+  const currentVersion = getPackageVersion();
+  const previousModels = getPreviousVersionModels(currentVersion);
+  if (previousModels) {
+    oldModels = previousModels;
+  } else if (existsSync(OUTPUT_FILE)) {
     try {
       const oldData = JSON.parse(readFileSync(OUTPUT_FILE, "utf-8"));
-      if (oldData && Array.isArray(oldData.models)) {
+      if (Array.isArray(oldData)) {
+        oldModels = oldData;
+      } else if (oldData && Array.isArray(oldData.models)) {
         oldModels = oldData.models;
       }
+      console.log("📊 Comparing changes against current generated/models.json...");
     } catch (e) {
       console.warn("⚠️ Could not read or parse existing models.json. Skipping diff calculation.");
     }
@@ -311,6 +372,15 @@ async function main() {
       }
       if (JSON.stringify(oldM.input) !== JSON.stringify(newM.input)) {
         changes.push(`input: [${oldM.input.join(", ")}] -> [${newM.input.join(", ")}]`);
+      }
+      if (JSON.stringify(oldM.thinkingConfig) !== JSON.stringify(newM.thinkingConfig)) {
+        changes.push(`thinkingConfig: changed`);
+      }
+      if (oldM.releaseDate !== newM.releaseDate) {
+        changes.push(`releaseDate: "${oldM.releaseDate}" -> "${newM.releaseDate}"`);
+      }
+      if (oldM.lastUpdated !== newM.lastUpdated) {
+        changes.push(`lastUpdated: "${oldM.lastUpdated}" -> "${newM.lastUpdated}"`);
       }
       if (changes.length > 0) {
         changed.push({ id: newM.id, name: newM.name, changes });
@@ -348,6 +418,10 @@ async function main() {
   }
   writeFileSync(OUTPUT_FILE, JSON.stringify(jsonOutput, null, 2), "utf-8");
   console.log(`\n🎉 Success! Configuration updated and written to: ${OUTPUT_FILE}`);
+  
+  // Save copy of this version to local data
+  saveToLocalData(outputModels, currentVersion);
+
   console.log(`🔢 Processed ${sortedFinalModels.length} models across ${finalCompanyOrder.length} providers.`);
 }
 
