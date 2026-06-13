@@ -17,10 +17,17 @@ All active development is conducted under Git worktrees to preserve template str
 NVIDIA NIM models are continuously changing. The data layer is decoupled from runtime business logic via `src/generated/models.json` and can be regenerated at any time.
 
 ### Synchronization & Auto-Update Command
-To pull new models, generate output, and compare against the previous version:
+To pull new models, generate output, and print a diff against the latest version backup:
 ```bash
 bun run update-models
 ```
+
+### Version Backup Command
+After updating `CHANGELOG.md` and bumping the version in `package.json`, snapshot the freshly generated dataset:
+```bash
+bun run backup-models
+```
+This copies `src/generated/models.json` to `.local/data/models_<version>.json`, stamped with the (new) version from `package.json`. The script refuses to overwrite an existing backup — this catches the mistake of running it before bumping the version (use `--force` to override deliberately).
 
 ### Heuristics & Filtering Mechanism
 The synchronization script (`scripts/update-models.ts`) runs offline (zero API keys needed) and automates the following pipeline:
@@ -32,19 +39,17 @@ The synchronization script (`scripts/update-models.ts`) runs offline (zero API k
    - **Vision Support**: Input modalities mapped to `["text", "image"]` if ID contains `vision`, `-vl`, or `multimodal`.
    - **Context Window**: Defaults to `128000` tokens, overridden based on suffixes (e.g. `1m` -> `1048576`).
 5. **Provider Grouping & Sorting**:
-   - Puts flagship groups first: `moonshotai` ➔ `z-ai` ➔ `deepseek-ai`.
+   - Puts flagship groups first: `moonshotai` -> `z-ai` -> `deepseek-ai`.
    - Sorts other providers alphabetically.
    - Sorts models within each company group chronologically using `release_date` (newest first).
-6. **Overwrite Write & Version Backup**:
-   - Writes the output definitions as a flat JSON array directly to `src/generated/models.json`.
-   - Saves a version-specific copy to `.local/data/models_<version>.json` (matching the version in `package.json`) for future version diffing.
-7. **Diff Comparison**: Prints a formatted summary of Added, Updated, and Removed models against the previous version's saved JSON file.
+6. **Diff Comparison**: Prints a formatted summary of Added, Updated, and Removed models against the highest-version backup in `.local/data` (falling back to the current `src/generated/models.json` when no backup exists).
+7. **Overwrite Write**: Writes the output definitions as a flat JSON array directly to `src/generated/models.json`. Backups are NOT written here — that is the separate post-version-bump `backup-models` step.
 
 ---
 
 ## 3. Configuration Output Structure
 
-The generated model metadata is saved in [src/generated/models.json](file:///Users/fangwang/project/coding/pi-nvidia-adapter/src/generated/models.json):
+The generated model metadata is saved in [src/generated/models.json](../src/generated/models.json):
 ```json
 [
   {
@@ -95,19 +100,21 @@ To ensure stability, the repository follows a strict **Branch-PR-Merge-Tag-Relea
    ```bash
    bun run check
    ```
-2. **Synchronize Latest Models**: Run the keyless script to ensure the JSON bundle contains the newest metadata.
+2. **Synchronize Latest Models**: Run the keyless script to regenerate the JSON bundle. It prints a diff against the latest version backup.
    ```bash
    bun run update-models
    ```
-3. **Commit & Bump Version**:
+3. **Update Changelog & Bump Version**: Hand the printed diff to an agent (or do it manually) to:
+   - Document the changes under `CHANGELOG.md`.
    - Bump the version in `package.json` following Semantic Versioning (SemVer) guidelines.
-   - Stage and commit the codebase changes along with the updated JSON configuration.
-     ```bash
-     git add -A
-     git commit -m "feat: sync models and bump version to vX.Y.Z"
-     ```
-4. **Push to Remote**: Push the local branch to the GitHub repository:
+4. **Backup the New Version's Dataset**: With the new version now in `package.json`, snapshot the generated JSON so it becomes the diff baseline for the next sync.
    ```bash
+   bun run backup-models
+   ```
+5. **Commit & Push**:
+   ```bash
+   git add -A
+   git commit -m "feat: sync models and bump version to vX.Y.Z"
    git push origin dev
    ```
 
