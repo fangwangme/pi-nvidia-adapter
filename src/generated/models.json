@@ -725,6 +725,39 @@
     "lastUpdated": "2025-09-05"
   },
   {
+    "id": "minimaxai/minimax-m3",
+    "name": "MiniMax-M3",
+    "company": "minimaxai",
+    "reasoning": true,
+    "input": [
+      "text",
+      "image"
+    ],
+    "contextWindow": 1000000,
+    "maxTokens": 16384,
+    "cost": {
+      "input": 0,
+      "output": 0,
+      "cacheRead": 0,
+      "cacheWrite": 0
+    },
+    "compat": {
+      "supportsReasoningEffort": false,
+      "supportsDeveloperRole": false,
+      "maxTokensField": "max_tokens"
+    },
+    "releaseDate": "2026-06-01",
+    "lastUpdated": "2026-06-01",
+    "thinkingConfig": {
+      "enableKwargs": {
+        "enable_thinking": true
+      },
+      "disableKwargs": {
+        "enable_thinking": false
+      }
+    }
+  },
+  {
     "id": "minimaxai/minimax-m2.7",
     "name": "MiniMax-M2.7",
     "company": "minimaxai",
