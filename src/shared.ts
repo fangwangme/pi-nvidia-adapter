@@ -1,3 +1,10 @@
+export interface ThinkingConfig {
+  enableKwargs: Record<string, any>;
+  disableKwargs?: Record<string, any>;
+  sendReasoningEffort?: boolean;
+  includeReasoningEffortInKwargs?: boolean;
+}
+
 export interface NimModelEntry {
   id: string;
   name: string;
@@ -10,6 +17,7 @@ export interface NimModelEntry {
   compat?: Record<string, any>;
   releaseDate?: string;
   lastUpdated?: string;
+  thinkingConfig?: ThinkingConfig;
 }
 
 // Skip patterns to filter out non-chat models (embedding, safety guards, detectors, and specialized APIs)

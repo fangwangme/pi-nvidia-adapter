@@ -1,6 +1,6 @@
 {
   "name": "pi-nvidia-adapter",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "NVIDIA API provider adapter for pi coding agent — dynamically auto-discover models via models.dev",
   "type": "module",
   "files": [
@@ -21,7 +21,8 @@
     "build": "echo 'nothing to build'",
     "check": "tsc --noEmit",
     "test": "node --test test/*.test.mjs",
-    "update-models": "bun scripts/update-models.ts"
+    "update-models": "bun scripts/update-models.ts",
+    "backup-models": "bun scripts/backup-models.ts"
   },
   "devDependencies": {
     "@earendil-works/pi-ai": "^0.74.0",
