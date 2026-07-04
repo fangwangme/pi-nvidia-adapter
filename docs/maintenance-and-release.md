@@ -93,7 +93,7 @@ The plugin imports this file at runtime to register active provider models witho
 
 ## 4. Releases & Versioning
 
-To ensure stability, the repository follows a strict **Branch-PR-Merge-Tag-Release** pipeline.
+To ensure stability, the repository follows a strict **Branch-PR-Merge-Tag** pipeline.
 
 ### Step 1: Preparation (in `.worktrees/dev`)
 1. **Verify Type-Safety**: Ensure all TypeScript checks pass cleanly.
@@ -125,7 +125,7 @@ To ensure stability, the repository follows a strict **Branch-PR-Merge-Tag-Relea
    ```
 2. **PR Review & Merge**: Squash and merge the PR into `main` after review.
 
-### Step 3: Tagging & Release (on `main`)
+### Step 3: Tagging (on `main`)
 After merging the PR into the `main` branch:
 1. **Update Local main Branch**:
    ```bash
@@ -137,7 +137,8 @@ After merging the PR into the `main` branch:
    git tag vX.Y.Z
    git push origin vX.Y.Z
    ```
-3. **Draft Release**: Draft a new release on GitHub, select tag `vX.Y.Z`, and copy notes from `CHANGELOG.md` into the release description.
+
+> **No GitHub Release is required.** This plugin is installed via `pi install git:github.com/fangwangme/pi-nvidia-adapter@<tag>`. Pi resolves git package sources with `git clone` + checkout of the pinned ref (tag or commit), so it never reads GitHub Releases. Since all version notes already live in `CHANGELOG.md`, a GitHub Release page adds no functional value — **each release is considered complete as soon as its tag is pushed.**
 
 ---
 
