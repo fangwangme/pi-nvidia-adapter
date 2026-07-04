@@ -58,14 +58,14 @@
     "lastUpdated": "2025-09-05"
   },
   {
-    "id": "z-ai/glm-5.1",
-    "name": "GLM-5.1",
+    "id": "z-ai/glm-5.2",
+    "name": "GLM-5.2",
     "company": "z-ai",
     "reasoning": true,
     "input": [
       "text"
     ],
-    "contextWindow": 131072,
+    "contextWindow": 1000000,
     "maxTokens": 131072,
     "cost": {
       "input": 0,
@@ -78,8 +78,8 @@
       "supportsDeveloperRole": false,
       "maxTokensField": "max_tokens"
     },
-    "releaseDate": "2026-03-27",
-    "lastUpdated": "2026-03-27",
+    "releaseDate": "2026-06-13",
+    "lastUpdated": "2026-06-13",
     "thinkingConfig": {
       "enableKwargs": {
         "enable_thinking": true,
